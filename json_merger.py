@@ -14,7 +14,7 @@ def merge_json_files():
         if course_code in website_dict:
             course['website'] = website_dict[course_code]
 
-    with open('data/merged_data.json', 'w', encoding='utf-8') as file:
+    with open('data/json/merged_data.json', 'w', encoding='utf-8') as file:
         json.dump(data, file, indent=2, ensure_ascii=False)
 
 if __name__ == "__main__":
