@@ -2,9 +2,9 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "Define what a robot is and its interaction modalities; Identify and collate user requirements to design human-robot interaction; Decide on human-robot interaction design decisions based on the users' needs.",
-        "competence_and_skills": "Describe stages of the design process for human-robot interaction; Identify suitable human-robot interaction modalities for the context of use; Make informed evaluations and analyses of human-robot interaction design.",
-        "judgement_and_approach": "Describe methods of designing human-robot interactions; Design robot interactions with user experience principles in mind; Derive critical and ethical implications for how human-robot interaction that can impact our society."
+        "knowledge_and_understanding": "Define what a robot is and its interaction modalities; Identify and collate user requirements to design human-robot interaction; Decide on human-robot interaction design decisions based on the users' needs",
+        "competence_and_skills": "Describe stages of the design process for human-robot interaction; Identify suitable human-robot interaction modalities for the context of use; Make informed evaluations and analyses of human-robot interaction design",
+        "judgement_and_approach": "Describe methods of designing human-robot interactions; Design robot interactions with user experience principles in mind; Derive critical and ethical implications for how human-robot interaction that can impact our society"
       }
     ],
     "course_code": "DIT007",
@@ -20,9 +20,9 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "master the terminology and key concepts in computer architecture in order to follow the research advances in this field.",
-        "competence_and_skills": "state and describe software performance for enhancement techniques: especially advanced pipelining techniques that can execute multiple instructions in parallel; state and describe the principles behind modern memory hierarchies and storage systems.",
-        "judgement_and_approach": "quantitatively assess the impact of an architectural technique on the performance of application software using state-of-the-art simulation tools."
+        "knowledge_and_understanding": "master the terminology and key concepts in computer architecture in order to follow the research advances in this field",
+        "competence_and_skills": "state and describe software performance for enhancement techniques: especially advanced pipelining techniques that can execute multiple instructions in parallel; state and describe the principles behind modern memory hierarchies and storage systems",
+        "judgement_and_approach": "quantitatively assess the impact of an architectural technique on the performance of application software using state-of-the-art simulation tools"
       }
     ],
     "course_code": "DIT051",
@@ -58,7 +58,7 @@
       {
         "knowledge_and_understanding": "discuss important technological aspects when designing and implementing analysis solutions for large-scale data; explain differences between parallel programming models; describe data structures and algorithms for big data and discuss their utility.",
         "competence_and_skills": "implement applications for transforming and analyzing large-scale data with different parallel software frameworks; use algorithms and datastructures for computations with large-scale data.",
-        "judgement_and_approach": "suggest appropriate computational infrastructures and methodological approaches for analysis tasks and discuss their advantages and drawbacks, discuss advantages and drawbacks of different strategies of parallelization; decide between algorithmic and parallelization-based approaches for accelerating computational workloads."
+        "judgement_and_approach": "suggest appropriate computational infrastructures and methodological approaches for analysis tasks and discuss their advantages and drawbacks; discuss advantages and drawbacks of different strategies of parallelization; decide between algorithmic and parallelization-based approaches for accelerating computational workloads"
       }
     ],
     "course_code": "DIT066",
@@ -92,7 +92,7 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "describe how mobile computing is defined and distinguished from other kinds of computing applications; describe what competences and resources are necessary for creating and utilizing mobile applications at different scales for different purposes (e.g. startup, enterprise, agency, freelance, artistic, altruistic, and research projects); interpret and explain relevant technological and contextual trends in commercial value creation and academic research; describe the latest technological research on mobile computing, and explain why research and commercial applications may diverge; describe the distinction between different design methods and tools (e.g. research methods, prototyping tools and approaches) that are appropriate for mobile computing; describe humanistic and societal issues (e.g. health, economics, politics) that are relevant to mobile computing; describe the landscape of mobile computing research, building on and properly citing relevant resources.",
+        "knowledge_and_understanding": "describe how mobile computing is defined and distinguished from other kinds of computing applications; describe what competences and resources are necessary for creating and utilizing mobile applications at different scales for different purposes (e.g. startup, enterprise, agency, freelance, artistic, altruistic, and research projects); interpret and explain relevant technological and contextual trends in commercial value creation and academic research; describe the latest technological research on mobile computing, and explain why research and commercial applications may diverge; describe the distinction between different design methods and tools (e.g. research methods, prototyping tools and approaches) that are appropriate for mobile computing; describe humanistic and societal issues (e.g. health, economics, politics) that are relevant to mobile computing; describe the landscape of mobile computing research, building on and properly citing relevant resources",
         "competence_and_skills": "develop functional software which runs on a mobile computing platform; select and execute appropriate design tactics (e.g. graphic design, typography, 3D modeling, photography, motion graphics) at an appropriate level of fidelity and excellence, to create mobile computing user interfaces; select and execute appropriate design tactics (e.g. graphic design, typography, 3D modeling, photography, motion graphics) at appropriate proportions and levels of excellence, to document and present mobile computing artifacts execute and document a complete design project which culminates in a mobile computing artifact",
         "judgement_and_approach": "execute and critique design research approaches that are appropriate for mobile computing, including ethnographic methods; critique the reasoning (strategy) and aesthetics (tactics) of mobile computing projects constructively; find, utilize, and properly acknowledge non-academic technical and tactical building blocks for mobile computing designs; interpret, constructively critique, and contribute to discussions on mobile computing in the public sphere; make and justify strategic design decisions to create relevant mobile computing artifacts."
       }
@@ -110,9 +110,9 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "describe algorithms and their qualities: explain algorithms in writing, so that others can understand how they work, why they are correct and fast, and where they are useful; design: apply the main design techniques for efficient algorithms (for instance greedy, dynamic programming, divide-and-conquer) to problems which are similar to the textbook examples but new; critically assess algorithmic ideas and demonstrate the ability to see through obvious and seemingly plausible algorithms that often turn out to be incorrect",
-        "competence_and_skills": "recognize and formalize non-trivial computational problems that appear in various real-world computer applications and which need to be solved by algorithms; perform in simple cases the whole development cycle of algorithms: problem analysis, choosing, modifying and combining suitable techniques and data structures, analysis of correctness and complexity, looking for possible improvements, etc; analyse: explain why the time efficiency of algorithms is crucial, express the time complexity in a rigorous and scientifically sound manner, analyze the time complexity of algorithms (sum up operations in nested loops, solve standard recurrences, etc.) i.e. perform an objective evaluation of the performance and be able to compare it to other algorithms performance.",
-        "judgement_and_approach": "intractability: recognize intractable problems and other classes of problems like PNP, NPC; perform simple reductions between problems, explain NP completeness, recognize various computationally hard problems which tend to appear over and over again in different applications"
+        "knowledge_and_understanding": "describe algorithms and their qualities: explain algorithms in writing, so that others can understand how they work, why they are correct and fast, and where they are useful; recognize and formalize non-trivial computational problems that appear in various real-world computer applications and which need to be solved by algorithms;  intractability: recognize intractable problems and other classes of problems like P,NP, NPC; prove the correctness of algorithms",
+        "competence_and_skills": "design: apply the main design techniques for efficient algorithms (for instance greedy, dynamic programming, divide-and-conquer) to problems which are similar to the textbook examples but new; perform in simple cases the whole development cycle of algorithms: problem analysis, choosing, modifying and combining suitable techniques and data structures, analysis of correctness and complexity, looking for possible improvements, etc;  perform simple reductions between problems, explain NP completeness, recognize various computationally hard problems which tend to appear over and over again in different applications",
+        "judgement_and_approach": "critically assess algorithmic ideas and demonstrate the ability to see through obvious and seemingly plausible algorithms that often turn out to be incorrect;  analyse: explain why the time efficiency of algorithms is crucial, express the time complexity in a rigorous and scientifically sound manner, analyze the time complexity of algorithms (sum up operations in nested loops, solve standard  recurrences, etc.) i.e. perform an objective evaluation of the performance and be able to compare it to other algorithms performance"
       }
     ],
     "course_code": "DIT093",
@@ -128,9 +128,9 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "Describe the role of a game designer within a game design project; Plan game design projects according to best practice description; Motivate different perspectives on game games and use of games, both from practical and ethical aspects",
-        "competence_and_skills": "Discuss game design features explicitly using both de facto industry concepts and theoretical frameworks; Develop a game design concept from initial idea to a full game design document, using iterative design processes and prototyping; Analyze different game designs using analytical tools to be able to suggest design changes and compare different game designs",
-        "judgement_and_approach": "Relate current game designs to earlier examples, from the direct predecessors to the first recorded example of similar games; Specify target audience and develop specific game design concepts for specific target audience; Evaluate game concepts and prototypes from the needs of different target audiences"
+        "knowledge_and_understanding": "Describe the role of a game designer within a game design project; Discuss game design features explicitly using both de facto industry concepts and theoretical frameworks; Relate current game designs to earlier examples, from the direct predecessors to the first recorded example of similar games",
+        "competence_and_skills": "Plan game design projects according to best practice description; Develop a game design concept from initial idea to a full game design document, using iterative design processes and prototyping; Specify target audience and develop specific game design concepts for specific target audience; Present game design concepts for an audience",
+        "judgement_and_approach": "Motivate different perspectives on game games and use of games, both from practical and ethical aspects; Analyze different game design using analytical tools to be able to suggest design  changes and compare different game designs; Evaluate game concepts and prototypes from the needs of different target audiences"
       }
     ],
     "course_code": "DIT098",
@@ -182,9 +182,9 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "Explain how computational technology can be used for design of interactive systems; Explain human cognition and motor skills; Explain how human cognition and motor skills can guide the design and evaluation of tangible user interfaces; Explain theories of tangible interaction.",
-        "competence_and_skills": "Design and realize interactive prototypes using tangible interface components; Choose appropriate and economic use of advanced components and corresponding techniques; Reflect on the relation between spatiality, form, and temporality in tangible interaction design.",
-        "judgement_and_approach": "Criticize and discuss computer-based tangible artifacts; Question in which way computational technology is shaping our present and future society and way of life; Reflect on sustainability issues such as energy consumption and material waste caused by novel computational systems and devices."
+        "knowledge_and_understanding": "Explain how computational technology can be used for design of interactive systems; Explain human cognition and motor skills; Explain how human cognition and motor skills can guide the design and evaluation of tangible user interfaces; Explain theories of tangible interaction",
+        "competence_and_skills": "Design and realize interactive prototypes using tangible interface components; Choose appropriate and economic use of advanced components and corresponding techniques; Reflect on the relation between spatiality, form, and temporality in tangible interaction design",
+        "judgement_and_approach": "Criticize and discuss computer-based tangible artifacts; Question in which way computational technology is shaping our present and future society and way of life; Reflect on sustainability issues such as energy consumption and material waste caused by novel computational systems and devices"
       }
     ],
     "course_code": "DIT107",
@@ -200,9 +200,9 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "Describe problems/challenges in the studied area of research, including challenges related to system design, networking and advanced programming techniques; Find the most relevant sources in the scientific literature, possibly with other complementary industrial sources; Analyze the performance of studied solutions using numerical analysis and formal proofs",
-        "competence_and_skills": "Identify critical issues and existing technological limitations in the state of the art in computer systems and networks; Review the relevant sources; Assess the impact that different solutions can have on an application or a system",
-        "judgement_and_approach": "Structure and write a report based on the relevant sources and their reviews; Critically analyze problems of modern networks and computer systems"
+        "knowledge_and_understanding": "Describe problems/challenges in the studied area of research, including challenges related to system design, networking and advanced programming techniques; Identify critical issues and existing technological limitations in the state of the art in computer systems and networks",
+        "competence_and_skills": "Find the most relevant sources in the scientific literature, possibly with other complementary industrial sources; Review the relevant sources; Structure and write a report based on the relevant sources and their reviews",
+        "judgement_and_approach": "Analyze the performance of studied solutions using numerical analysis and formal proofs; Assess the impact that different solutions can have on an application or a system; Critically analyze problems of modern networks and computer systems"
       }
     ],
     "course_code": "DIT147",
@@ -218,9 +218,9 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "formulate requirements for embedded systems with strict constraints on computational delay and periodicity; construct concurrently-executing tasks (software units) for real-time applications that interface to hardware devices (sensors/actuators); reflect and argue in writing on ethical aspects regarding the choice of system implementation",
-        "competence_and_skills": "categorize and describe the different layers in a system architecture for embedded real-time systems; apply the basic analysis methods used for verifying the temporal correctness of a set of executing tasks",
-        "judgement_and_approach": "describe the principles and mechanisms used for designing run-time systems and communication networks for real-time applications"
+        "knowledge_and_understanding": "formulate requirements for embedded systems with strict constraints on computational delay and periodicity; categorize and describe the different layers in a system architecture for embedded real-time systems; describe the principles and mechanisms used for designing run-time systems and  communication networks for real-time applications; describe how the general principles in real-time programming are implemented in different high-level programming languages",
+        "competence_and_skills": "construct concurrently-executing tasks (software units) for real-time applications  that interface to hardware devices (sensors/actuators); apply the basic analysis methods used for verifying the temporal correctness of a set of executing tasks",
+        "judgement_and_approach": " reflect and argue in writing on ethical aspects regarding the choice of system implementation"
       }
     ],
     "course_code": "DIT162",
@@ -254,9 +254,9 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "Describe how prototypes are used in interaction design; Create physical prototypes in various materials, with various techniques; Decide which type of prototype to use in order to find out what needs to be learned or tested, taking possible constraints into account, e.g. time and budget",
-        "competence_and_skills": "List the pros and cons with different types of prototypes; Create video prototypes to present a concept or proposal; Apply early stage evaluations",
-        "judgement_and_approach": "Explain what can be learned from a certain prototype and why; Create simple sketch prototypes; Incorporate suitable prototypes at the right stages in a design process"
+        "knowledge_and_understanding": "Describe how prototypes are used in interaction design; List the pros and cons with different types of prototypes; Explain what can be learned from a certain prototype and why; Explain what can not be learned from a certain prototype and why",
+        "competence_and_skills": "create physical prototypes in various materials, with various techniques; create video prototypes to present a concept or proposal;  create simple sketch prototypes; create digital/physical prototypes; perform basic programming of micro-controllers connected to sensors and actuators; program simple interactive prototypes",
+        "judgement_and_approach": "decide which type of prototype to use in order to find out what needs to be learned or tested, taking possible constraints into account, e.g. time and budget;  apply early stage evaluations; incorporate suitable prototypes at the right stages in a design process"
       }
     ],
     "course_code": "DIT176",
@@ -308,9 +308,9 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "explain the functioning of finite automata; define and implement abstract syntax; judge about programming language design issues as for example with the respect to efficiency and usability",
-        "competence_and_skills": "explain the principles of LL and LR parsing; define the lexical structure of programming languages by using regular expressions, and implement lexical analyzers by using standard tools",
-        "judgement_and_approach": "explain the concept of compiler correctness; define the syntax of programming languages by using context-free grammars and implement parsers by using standard tools"
+        "knowledge_and_understanding": "explain the functioning of finite automata; explain the principles of LL and LR parsing; explain the concept of compiler correctness",
+        "competence_and_skills": "define and implement abstract syntax; define the lexical structure of programming languages by using regular expressions, and implement lexical analyzers by using standard tools; define the syntax of programming languages by using context-free grammars and  implement parsers by using standard tools; write simple code generators; apply the technique of syntax-directed translation and its efficient implementation in  their chosen programming language; formulate typing rules and implement type checkers for functional and imperative  languages; formulate operational semantic rules and implement interpreters for functional and imperative languages",
+        "judgement_and_approach": " judge about programming language design issues as for example with the respect to  efficiency and usability"
       }
     ],
     "course_code": "DIT231",
@@ -344,9 +344,9 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "apply of basic concepts of distributed systems and their challenges, naming and synchronization of systems, consistency and replication, and fault tolerance in distributed systems; develop and evaluate small-scale distributed systems using fundamental mechanisms; describe and analyse existing and new methods for distributed systems design. In particular, the systems ability for scalability and fault tolerance",
-        "competence_and_skills": "describe applications of distributed systems and the mechanisms these use to provide their services; demonstrate software developments in advanced settings including unreliable links and systems as well as limited bandwidth; discuss and value the social and ethical aspects of distributed systems and their applications",
-        "judgement_and_approach": "discuss and analyse the challenges and requirements of different approaches; demonstrate experimental results in oral and written presentation"
+        "knowledge_and_understanding": "apply of basic concepts of distributed systems and their challenges, naming and synchronization of systems, consistency and replication, and fault tolerance in distributed systems; describe applications of distributed systems and the mechanisms these use to provide their services; discuss and analyse the challenges and requirements of different approaches; compare and summarize the strength and weaknesses associated with the individual mechanisms",
+        "competence_and_skills": "develop and evaluate small-scale distributed systems using fundamental  mechanisms; demonstrate software developments in advanced settings including unreliable links and systems as well as limited bandwidth; demonstrate experimental results in oral and written presentation",
+        "judgement_and_approach": "describe and analyse existing and new methods for distributed systems design. In  particular, the systems ability for scalability and fault tolerance; discuss and value the social and ethical aspects of distributed systems and their applications"
       }
     ],
     "course_code": "DIT240",
@@ -362,9 +362,9 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "know and use appropriate academic technical terminology for games; show an understanding of different types and approaches to classifying games; analyze games given a specific research question, research stance, and academic vocabulary",
-        "competence_and_skills": "identify the ethical implications of a game's design; show an understanding of different academic approaches to researching games and gaming; describe games given a specific focus and showing an adequate use of academic game terms",
-        "judgement_and_approach": "be able to choose and combine different academic approaches in order to analyze and interpret games; make comparisons between games or parts of games through the use of academic game terms"
+        "knowledge_and_understanding": "know and use appropriate academic technical terminology for games; identify the ethical implications of a game's design",
+        "competence_and_skills": "show an understanding of different types and approaches to classifying games; show an understanding of different academic approaches to researching games and gaming; be able to choose and combine different academic approaches in order to analyze and interpret games; integrate scholarly literature in the exploration of the academic context of a game",
+        "judgement_and_approach": "analyze games given a specific research question, research stance, and academic vocabulary;  describe games given a specific focus and showing an adequate use of academic game terms; make comparisons between games or parts of games through the use of academic game terms; analyze games in relation to various intended uses; analyze games from several different gaming preferences"
       }
     ],
     "course_code": "DIT248",
@@ -372,7 +372,7 @@
     "credits": "7.5",
     "department": "Department of Computer Science and Engineering",
     "entry_requirements": "Bachelor degree of 180 higher educational credits or 60 higher educational credits in the main field of study of Computer Science.",
-    "course_content": "The course provides an overview of games as well as theoretical concepts and frameworks that can be used for their analysis and evaluation. The course includes a particular focus on video games, modern board games, and tabletop roleplaying games. We also look at transmedial aspects, and gaming forms that don’t fit neatly into these categories. Students formulate several research questions of their choosing around games, and during the course they develop the skills required to provide answers to those questions. The course introduces three key research perspectives that are useful for game studies. We make use of the systemic perspective, which explores how games work. We look at the experiential perspective, which explores how games make us feel. And we look at the critical perspective, which focuses on what games are trying to say. The course also has a strong focus on ‘learning by playing’, recognising that games are the primary text of their discipline. Students taking this course will have an opportunity to try out tabletop roleplaying for themselves, as well as a chance to play a curated selection of modern board games. Course participants put together an academic paper and poster as part of the course; peer review the papers of their fellow students; and present their papers to their colleagues at an end-of-course symposium.",
+    "course_content": "The course provides an overview of games as well as theoretical concepts and frameworks that can be used for their analysis and evaluation. The course includes a particular focus on video games, modern board games, and tabletop roleplaying games. We also look at transmedial aspects, and gaming forms that don't fit neatly into these categories. Students formulate several research questions of their choosing around games, and during the course they develop the skills required to provide answers to those questions. The course introduces three key research perspectives that are useful for game studies. We make use of the systemic perspective, which explores how games work. We look at the experiential perspective, which explores how games make us feel. And we look at the critical perspective, which focuses on what games are trying to say. The course also has a strong focus on ‘learning by playing’, recognising that games are the primary text of their discipline. Students taking this course will have an opportunity to try out tabletop roleplaying for themselves, as well as a chance to play a curated selection of modern board games. Course participants put together an academic paper and poster as part of the course; peer review the papers of their fellow students; and present their papers to their colleagues at an end-of-course symposium.",
     "assessment": "The course is examined through several written submissions and a mandatory presentation at the end of the course. Participation in the course, as evidenced through peer reviewing and engagement with scheduled game exercises, also contributes to an individual's grade.",
     "grading": "Pass with distinction (5), Pass with credit (4), Pass (3) and Fail (U)",
     "language": "English"
@@ -382,7 +382,7 @@
       {
         "knowledge_and_understanding": "apply important design and analysis techniques for algorithms, in particular, ways to approach NP-complete problems; describe current research on algorithms",
         "competence_and_skills": "apply design and analysis techniques to solve new problems that may arise in various applications; explain complex algorithms and their proofs in written form",
-        "judgement_and_approach": "find connections between algorithmic problems and turn them into formal reductions; perform more complex analysis of algorithms, in particular, analyze the worst case and expected time complexities and error probabilities for randomized algorithms."
+        "judgement_and_approach": "find connections between algorithmic problems and turn them into formal reductions; perform more complex analysis of algorithms, in particular, analyze the worst case and expected time complexities and error probabilities for randomized algorithms"
       }
     ],
     "course_code": "DIT251",
@@ -416,9 +416,9 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "Distinguish between concurrency and parallelism; Write, modify and test parallel functional programs, to run on a variety of architectures such as shared memory multiprocessors, networks of commodity servers, and GPUs; Identify when using a functional language may be appropriate for solving a parallel programming problem",
-        "competence_and_skills": "Give an overview of approaches to parallelism in functional programming languages in the scientific literature; Interpret parallelism profiles and address bottlenecks; Select an appropriate form of parallel functional programming for a given problem, and explain the choice",
-        "judgement_and_approach": ""
+        "knowledge_and_understanding": "Distinguish between concurrency and parallelism; Give an overview of approaches to parallelism in functional programming languages in the scientific literature",
+        "competence_and_skills": "Write, modify and test parallel functional programs, to run on a variety of architectures such as shared memory multiprocessors, networks of commodity servers, and GPUs; Interpret parallelism profiles and address bottlenecks",
+        "judgement_and_approach": "Identify when using a functional language may be appropriate for solving a parallel programming problem;  Select an appropriate form of parallel functional programming for a given problem, and explain the choice"
       }
     ],
     "course_code": "DIT261",
@@ -470,9 +470,9 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "Identify a common RE challenge in a given software development context; Plan suitable RE practices in a team with respect to a given software development context; Assess new requirements engineering knowledge (challenge, principle, practice) and relate them to the framework in this course",
-        "competence_and_skills": "Choose an appropriate RE practice in a given software development context; Effectively apply a suitable RE practice in a team in a given software development context; Suggest suitable actions to overcome a lack of requirements knowledge in a software development context",
-        "judgement_and_approach": "Compare suitability as well as advantages and disadvantages of given RE practices in a given software development context; Analyze the effect and quality of the outcome of a set of or individual RE practices in a given software development context; Consider inter-team, program level and social/ethical implications of a set of RE practices in a given software development context"
+        "knowledge_and_understanding": "Identify a common RE challenge in a given software development context; Choose an appropriate RE practice in a given software development context; Compare suitability as well as advantages and disadvantages of given RE practices  in a given software development context; Explain the current state of practice and research in requirements engineering",
+        "competence_and_skills": "Plan suitable RE practices in a team with respect to a given software development context; Effectively apply a suitable RE practice in a team in a given software development context; Analyze the effect and quality of the outcome of a set of or individual RE practices in a given software development context",
+        "judgement_and_approach": "Assess new requirements engineering knowledge (challenge, principle, practice) and relate them to the framework in this course; Suggest suitable actions to overcome a lack of requirements knowledge in a software development context; Consider inter-team, program level and social/ethical implications of a set of RE practices in a given software development context; Critically assess the effectivity of a set of RE practices from the perspective of the student's master program (e.g. Software Engineering & Technology/Management, Interaction Design, Game Design, Data Science, ...)"
       }
     ],
     "course_code": "DIT285",
@@ -506,9 +506,9 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "define lexical and syntactic structure of a programming language using regular expressions and grammars, respectively; use standard tools to generate a lexical analyzer and a parser for a compiler; judge the difficulty of implementing various programming language features for different architectures",
-        "competence_and_skills": "define type systems for typical programming languages; define suitable abstract syntax data types",
-        "judgement_and_approach": "recognize the characteristics of both stack machines and register machines and how common high level constructs in imperative languages are mapped to machine code; implement type checking, including simple type inference, with error reporting and decoration of syntax trees with type information"
+        "knowledge_and_understanding": "define lexical and syntactic structure of a programming language using regular expressions and grammars, respectively; define type systems for typical programming languages; recognize the characteristics of both stack machines and register machines and how common high level constructs in imperative languages are mapped to machine code; recognize the general idea of data flow analysis for static analysis of properties of programs; recognize the main issues of compiling functional and object-oriented languages",
+        "competence_and_skills": "use standard tools to generate a lexical analyzer and a parser for a compiler; define suitable abstract syntax data types; implement type checking, including simple type inference, with error reporting and decoration of syntax trees with type information; design and implement compilation schemes that generate intermediate or assembly code from a source program; implement simple data flow analysis; implement simple memory management for heap-based data",
+        "judgement_and_approach": "judge the difficulty of implementing various programming language features for different architectures"
       }
     ],
     "course_code": "DIT301",
@@ -524,9 +524,9 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "define the notion of computable function, explain the Church-Turing thesis; explain the relationship between inductively defined sets, primitive recursion, and proofs by structural induction",
-        "competence_and_skills": "prove that sets are countable or uncountable, for instance by using diagonalisation; encode inductively defined sets in such a way that members of these sets can be used as inputs or outputs for programs in one or more models of computation; implement programs—in particular; interpreters—correctly in one or more models of computation; prove that functions are or are not computable in some models of computation",
-        "judgement_and_approach": "analyse programs belonging to some models of computation, and manipulate and analyse models of computation"
+        "knowledge_and_understanding": "define the notion of computable function; explain the Church-Turing thesis; explain the relationship between inductively defined sets, primitive recursion, and proofs by structural induction",
+        "competence_and_skills": "prove that sets are countable or uncountable, for instance by using diagonalisation; encode inductively defined sets in such a way that members of these sets can be used as inputs or outputs for programs in one or more models of computation; implement programs—in particular, interpreters—correctly in one or more models of computation; prove that functions are or are not computable in some models of computation",
+        "judgement_and_approach": "analyse programs belonging to some models of computation; and manipulate and analyse models of computation"
       }
     ],
     "course_code": "DIT313",
@@ -542,9 +542,9 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "Recognize well-established cryptosystems and identify settings where they can be used to improve the security of a given system; Describe goals and design principles for, and common structures of, several cryptographic primitives and proof systems; Exemplify when various notions of security are applicable and describe the security guarantees provided",
-        "competence_and_skills": "Demonstrate knowledge of principles behind provable security; Identify, analyse and explain various forms of attacks based on improper usage of primitives, modes of operation, or protocols; Apply the acquired knowledge in new situations",
-        "judgement_and_approach": "Understand the theoretic foundations of cryptography; Reproduce rigorous proofs of security"
+        "knowledge_and_understanding": "Recognize well-established cryptosystems and identify settings where they can be used to improve the security of a given system; Demonstrate knowledge of principles behind provable security; Understand the theoretic foundations of cryptography",
+        "competence_and_skills": "Describe goals and design principles for, and common structures of, several cryptographic primitives and proof systems; Identify, analyse and explain various forms of attacks based on improper usage of primitives, modes of operation, or protocols; Reproduce rigorous proofs of security",
+        "judgement_and_approach": " Exemplify when various notions of security are applicable and describe the security guarantees provided; Apply the acquired knowledge in new situations"
       }
     ],
     "course_code": "DIT352",
@@ -578,9 +578,9 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "explain a representative set of available methods for machine learning; implement and analyze machine learning algorithms; choose appropriate methods and apply them to specific inference problems, based on a solid understanding of scientific literature in the field",
-        "competence_and_skills": "apply sound mathematical principles to the inference of hypotheses from empirical data and models on scientific grounds; evaluate the methods qualitatively and quantitatively, and recognize their strengths as well as their limitations",
-        "judgement_and_approach": ""
+        "knowledge_and_understanding": "explain a representative set of available methods for machine learning",
+        "competence_and_skills": "implement and analyze machine learning algorithms; apply sound mathematical principles to the inference of hypotheses from empirical data and models on scientific grounds",
+        "judgement_and_approach": "choose appropriate methods and apply them to specific inference problems, based on a solid understanding of scientific literature in the field;  evaluate the methods qualitatively and quantitatively, and recognize their strengths as well as their limitations"
       }
     ],
     "course_code": "DIT382",
@@ -632,8 +632,8 @@
   {
     "learning_outcomes": [
       {
-        "knowledge_and_understanding": "Examine current technological and social trends in gaming; Apply creativity techniques with the intention of exploring innovative new gameplay concepts",
-        "competence_and_skills": "Analyse the potential opportunities and threats associated with contemporary gaming trends; Implement game designs to explore novel, emerging techniques",
+        "knowledge_and_understanding": "Examine current technological and social trends in gaming; Analyse the potential opportunities and threats associated with contemporary gaming trends",
+        "competence_and_skills": "Apply creativity techniques with the intention of exploring innovative new gameplay concepts; Implement game designs to explore novel, emerging techniques",
         "judgement_and_approach": "Assess the ethical and societal impact of contemporary trends in gaming"
       }
     ],
