@@ -38,20 +38,39 @@ def save_formatted_urls(urls, filename='course_urls_formatted.txt'):
             f.write(formatted_url + '\n')
 
 def main():
-    url = "https://www.gu.se/en/study-gothenburg/study-options/find-courses?education_level.keyword=Master&education_type.keyword=Course&hits=54&subject_area=Information%20Technology%20and%20Computer%20Science"
+    urls = [
+        "https://www.gu.se/en/study-gothenburg/study-options/find-courses?education_type.keyword=Course&hits=340&subject_area=Art%2C%20Design%2C%20Crafts%20and%20Music",
+        "https://www.gu.se/en/study-gothenburg/study-options/find-courses?education_type.keyword=Course&hits=340&subject_area=Business%2C%20Management%20and%20Economics",
+        "https://www.gu.se/en/study-gothenburg/study-options/find-courses?education_type.keyword=Course&hits=340&subject_area=Educational%20Sciences",
+        "https://www.gu.se/en/study-gothenburg/study-options/find-courses?education_type.keyword=Course&hits=340&subject_area=Health%20Sciences",
+        "https://www.gu.se/en/study-gothenburg/study-options/find-courses?education_type.keyword=Course&hits=340&subject_area=Humanities",
+        "https://www.gu.se/en/study-gothenburg/study-options/find-courses?education_type.keyword=Course&hits=340&subject_area=Information%20Technology%20and%20Computer%20Science",
+        "https://www.gu.se/en/study-gothenburg/study-options/find-courses?education_type.keyword=Course&hits=340&subject_area=Language",
+        "https://www.gu.se/en/study-gothenburg/study-options/find-courses?education_level.keyword=Bachelor&education_type.keyword=Course&hits=275&sort=alphabetical&subject_area=Natural%20Sciences%20and%20Mathematics",
+        "https://www.gu.se/en/study-gothenburg/study-options/find-courses?education_level.keyword=Master&education_type.keyword=Course&hits=275&sort=alphabetical&subject_area=Natural%20Sciences%20and%20Mathematics",
+        "https://www.gu.se/en/study-gothenburg/study-options/find-courses?education_type.keyword=Course&hits=340&subject_area=Social%20Sciences%20and%20Behavioral%20Science"
+    ]
     
-    html_content = fetch_webpage_with_selenium(url)
+    all_course_urls = []
     
-    if html_content:
-        course_urls = extract_course_urls(html_content)
-        save_formatted_urls(course_urls)
+    for url in urls:
+        print(f"\nProcessing URL: {url}")
+        html_content = fetch_webpage_with_selenium(url)
         
-        print(f"Found {len(course_urls)} course URLs")
-        print("\nFirst few formatted URLs:")
-        for url in course_urls[:5]:
-            print(f"https://www.gu.se{url}")
-    else:
-        print("Failed to fetch webpage content")
+        if html_content:
+            course_urls = extract_course_urls(html_content)
+            all_course_urls.extend(course_urls)
+            print(f"Found {len(course_urls)} course URLs from this page")
+        else:
+            print("Failed to fetch webpage content")
+    
+    # Save all URLs at once
+    save_formatted_urls(all_course_urls)
+    
+    print(f"\nTotal courses found: {len(all_course_urls)}")
+    print("\nFirst few formatted URLs:")
+    for url in all_course_urls[:5]:
+        print(f"https://www.gu.se{url}")
 
 if __name__ == "__main__":
     main()
