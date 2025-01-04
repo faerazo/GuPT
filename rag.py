@@ -114,7 +114,7 @@ class RAGModel:
         
         # Initialize OpenAI model
         self.llm = ChatOpenAI(
-            model_name="gpt-4",
+            model_name="gpt-4o-mini",
             temperature=0.3,
             openai_api_key=self.openai_api_key
         )
@@ -281,31 +281,29 @@ def create_gradio_interface(rag_model: RAGModel):
                         "Tell me about the evaluation methods in DIT235."
                     ],
                     css="div.message-wrap { height: 600px !important; overflow-y: auto; }",
-                    type="messages"  # Use new message format
+                    type="messages"
                 )
             
             # Metrics column (1/3 of width)
             with gr.Column(scale=1):
                 # System Metrics Section
-                with gr.Group(visible=True):
-                    gr.Markdown("### System Metrics")
-                    metrics_display = gr.Markdown()
-                    refresh_btn = gr.Button("Refresh Metrics", variant="primary")
-                    refresh_btn.click(get_metrics, outputs=metrics_display)
-                    
-                    # Initialize metrics display
-                    metrics_display.value = get_metrics()
+                gr.Markdown("### System Metrics")
+                metrics_display = gr.Markdown()
+                refresh_btn = gr.Button("Refresh Metrics", variant="primary")
+                refresh_btn.click(get_metrics, outputs=metrics_display)
+                
+                # Initialize metrics display
+                metrics_display.value = get_metrics()
                 
                 # System Information Section
-                with gr.Group(visible=True):
-                    gr.Markdown("### System Information")
-                    gr.Markdown("""
-                    - **Model**: GPT-4
-                    - **Embedding Model**: OpenAI Embeddings
-                    - **Vector Store**: Chroma
-                    - **Search Strategy**: MMR (Maximum Marginal Relevance)
-                    - **Temperature**: 0.3
-                    """)
+                gr.Markdown("### System Information")
+                gr.Markdown("""
+                - **Model**: GPT-4o-mini
+                - **Embedding Model**: OpenAI Embeddings
+                - **Vector Store**: Chroma
+                - **Search Strategy**: MMR (Maximum Marginal Relevance)
+                - **Temperature**: 0.3
+                """)
     
     return interface
 
