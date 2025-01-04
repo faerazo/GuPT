@@ -1,6 +1,9 @@
 from firecrawl import FirecrawlApp
 import os
 import time
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = FirecrawlApp(api_key=os.getenv('FIRECRAWL_API_KEY'))
 
@@ -9,7 +12,7 @@ os.makedirs('data/website', exist_ok=True)
 RATE_LIMIT_DELAY = 6.5  # seconds between requests
 RATE_LIMIT_EXCEEDED_DELAY = 31  # seconds to wait when rate limit is hit
 
-with open('course_urls_formatted.txt', 'r') as file:
+with open('course_urls_formatted1.txt', 'r') as file:
     for url in file:
         url = url.strip()
         filename = url.rstrip('/').split('/')[-1] + '.md'
@@ -35,4 +38,4 @@ with open('course_urls_formatted.txt', 'r') as file:
                 print(f"Rate limit exceeded. Waiting {RATE_LIMIT_EXCEEDED_DELAY} seconds...")
                 time.sleep(RATE_LIMIT_EXCEEDED_DELAY)
             else:
-                time.sleep(RATE_LIMIT_DELAY) 
+                time.sleep(RATE_LIMIT_DELAY)

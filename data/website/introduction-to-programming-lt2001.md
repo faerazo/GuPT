@@ -40,7 +40,7 @@ Course
 LT2001
 
 
-Masterâ€™s level
+Master’s level
 
 
 
@@ -68,7 +68,7 @@ Day
 Location
 
 
-GÃ¶teborg
+Göteborg
 
 Study form
 
@@ -132,7 +132,7 @@ Day
 Location
 
 
-GÃ¶teborg
+Göteborg
 
 Study form
 
@@ -203,7 +203,7 @@ Students with an undergraduate degree (at least three year full-time study) in:
 
 \- adjacent subjects, e.g. cognitive science, languages, philosophy or mathematics (provided that the student can show a background in either programming or formal linguistics corresponding to 30 credits, that is half a year full-time study), or
 
-\- certificate from their department assessingÂ that they fulfill equivalent qualifications.
+\- certificate from their department assessing that they fulfill equivalent qualifications.
 
 To provide the requirement in English by an internationally recognized test, for example TOEFL, IELTS, the English proficiency should be equivalent to the level of English 5/English Course A from Swedish Upper Secondary School.
 
@@ -218,14 +218,14 @@ Selection is based upon the number of credits from previous university studies, 
 How to apply\\
 \\
 \\
-To be admitted to the University, you need to do an online application. The application procedure is straightforward, but itâ€¦](/en/study-in-gothenburg/apply)
+To be admitted to the University, you need to do an online application. The application procedure is straightforward, but it…](/en/study-in-gothenburg/apply)
 
 [![](/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2024-01/GU-7.jpg?media_id=95188&width=1904&height=208)\\
 \\
 Scholarships for fee paying students\\
 \\
 \\
-A scholarship can help cover the costs of your studies at the University of Gothenburg. On these pages, you will findâ€¦](/en/study-in-gothenburg/apply/scholarships-for-fee-paying-students)
+A scholarship can help cover the costs of your studies at the University of Gothenburg. On these pages, you will find…](/en/study-in-gothenburg/apply/scholarships-for-fee-paying-students)
 
 [University studies in Sweden External link](https://www.gu.se/en/study-in-gothenburg/before-you-arrive/university-studies-in-sweden "External link")
 

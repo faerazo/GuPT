@@ -44,7 +44,7 @@ Course
 TIA125
 
 
-Masterâ€™s level
+Master’s level
 
 
 
@@ -55,7 +55,7 @@ Masterâ€™s level
 Offered by the
 [Department of Applied Information Technology](https://www.gu.se/en/applied-information-technology)
 at
-[IT Faculty](https://www.gu.se/en/it-faculty)
+[Faculty of Science and Technology](https://www.gu.se/en/science-and-technology)
 
 ## Autumn 2024
 
@@ -72,7 +72,7 @@ Day
 Location
 
 
-GÃ¶teborg
+Göteborg
 
 Study form
 
@@ -146,19 +146,19 @@ Selection is based upon the number of credits from previous university studies, 
 
 ## Study at The University of Gothenburg
 
-[![](/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2020-03/cytonn-photography-ZJEKICY5EXY-unsplash.jpg?media_id=2553&width=1904&height=208)\\
+[![](/sites/default/files/dynamic-image/dynamic_image_1490_218/public/2020-03/cytonn-photography-ZJEKICY5EXY-unsplash.jpg?media_id=2553&width=1249&height=208)\\
 \\
 How to apply \\
 \\
 \\
-To be admitted to the University, you need to do an online application. The application procedure is straightforward, but itâ€¦](/en/study-in-gothenburg/apply)
+To be admitted to the University, you need to do an online application. The application procedure is straightforward, but it…](/en/study-in-gothenburg/apply)
 
-[![](/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2024-01/GU-7.jpg?media_id=95188&width=1904&height=208)\\
+[![](/sites/default/files/dynamic-image/dynamic_image_1490_218/public/2024-01/GU-7.jpg?media_id=95188&width=1249&height=208)\\
 \\
 Scholarships for fee paying students\\
 \\
 \\
-A scholarship can help cover the costs of your studies at the University of Gothenburg. On these pages, you will findâ€¦](/en/study-in-gothenburg/apply/scholarships-for-fee-paying-students)
+A scholarship can help cover the costs of your studies at the University of Gothenburg. On these pages, you will find…](/en/study-in-gothenburg/apply/scholarships-for-fee-paying-students)
 
 [University studies in Sweden External link](https://www.gu.se/en/study-in-gothenburg/before-you-arrive/university-studies-in-sweden "External link")
 
@@ -168,3 +168,61 @@ Last modified
 
 
 19 June 2024
+
+Dela länken till Facebook
+
+Dela länken till X
+
+Dela länken till Linkedin
+
+Email
+
+More Alternatives
+
+## Share Content to Social Media
+
+Close Pop-up
+
+Data and Society \| University of Gothenburg
+
+https://www.gu.se/en/study-gothenburg/data-and-society-tia125
+
+Dela länken till Facebook
+
+Facebook
+
+Dela länken till X
+
+X
+
+Dela länken till Linkedin
+
+Linkedin
+
+Dela länken till Pinterest
+
+Pinterest
+
+Dela länken till Tumblr
+
+Tumblr
+
+Dela länken till Xing
+
+Xing
+
+Dela länken till Reddit
+
+Reddit
+
+Dela länken till VK
+
+VK
+
+Print
+
+Print
+
+Email
+
+Email

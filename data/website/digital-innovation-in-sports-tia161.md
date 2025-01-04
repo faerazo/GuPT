@@ -44,7 +44,7 @@ Course
 TIA161
 
 
-Masterâ€™s level
+Master’s level
 
 
 
@@ -55,7 +55,7 @@ Masterâ€™s level
 Offered by the
 [Department of Applied Information Technology](https://www.gu.se/en/applied-information-technology)
 at
-[IT Faculty](https://www.gu.se/en/it-faculty)
+[Faculty of Science and Technology](https://www.gu.se/en/science-and-technology)
 
 ## Autumn 2024
 
@@ -139,7 +139,7 @@ Mixed time
 Location
 
 
-GÃ¶teborg
+Göteborg
 
 Study form
 
@@ -223,14 +223,14 @@ Selection is based upon the number of credits from previous university studies, 
 How to apply\\
 \\
 \\
-To be admitted to the University, you need to do an online application. The application procedure is straightforward, but itâ€¦](/en/study-in-gothenburg/apply)
+To be admitted to the University, you need to do an online application. The application procedure is straightforward, but it…](/en/study-in-gothenburg/apply)
 
 [![](/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2024-01/GU-7.jpg?media_id=95188&width=1904&height=208)\\
 \\
 Scholarships for fee paying students\\
 \\
 \\
-A scholarship can help cover the costs of your studies at the University of Gothenburg. On these pages, you will findâ€¦](/en/study-in-gothenburg/apply/scholarships-for-fee-paying-students)
+A scholarship can help cover the costs of your studies at the University of Gothenburg. On these pages, you will find…](/en/study-in-gothenburg/apply/scholarships-for-fee-paying-students)
 
 [University studies in Sweden External link](https://www.gu.se/en/study-in-gothenburg/before-you-arrive/university-studies-in-sweden "External link")
 
