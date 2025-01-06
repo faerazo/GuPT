@@ -210,3 +210,4 @@ The study programme will be followed up and evaluated in accordance with the app
 ## Guaranteed admission
 
 Students admitted to the programme have a general guaranteed admission to all compulsory courses within the programme, provided that they 1) apply according to specified administrative procedures, and 2) have completed courses that are included in the prerequisites. Students admitted to the programme have a limited guaranteed admission to the elective courses within the programme under the same conditions as above.
+Students admitted to the programme have a general guaranteed admission to all compulsory courses within the programme, provided that they 1) apply according to specified administrative procedures, and 2) have completed courses that are included in the prerequisites. Students admitted to the programme have a limited guaranteed admission to the elective courses within the programme under the same conditions as above.
