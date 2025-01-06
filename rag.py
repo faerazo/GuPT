@@ -157,10 +157,10 @@ class RAGModel:
             start_time = time.time()
             
             # Check if Chroma database already exists
-            if os.path.exists("./chroma_db") and os.listdir("./chroma_db"):
+            if os.path.exists("./data/chroma") and os.listdir("./data/chroma"):
                 print("Loading existing embeddings from Chroma database...")
                 self.vector_store = Chroma(
-                    persist_directory="./chroma_db",
+                    persist_directory="./data/chroma",
                     embedding_function=self.embeddings
                 )
                 collection_size = len(self.vector_store.get()['ids'])
@@ -179,7 +179,7 @@ class RAGModel:
                 self.vector_store = Chroma.from_documents(
                     documents=chunks,
                     embedding=self.embeddings,
-                    persist_directory="./chroma_db",
+                    persist_directory="./data/chroma",
                     collection_metadata={"hnsw:space": "cosine"}
                 )
                 
