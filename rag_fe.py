@@ -1,5 +1,5 @@
 import os
-from typing import List, Dict
+from typing import List, Dict, Literal
 from dotenv import load_dotenv
 from langchain_community.document_loaders import DirectoryLoader, PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -11,6 +11,8 @@ from langchain.prompts import PromptTemplate, ChatPromptTemplate, SystemMessageP
 from langchain.chains.question_answering import load_qa_chain
 from langchain_core.documents import Document
 from langchain_core.output_parsers import StrOutputParser
+from langchain_core.pydantic_v1 import BaseModel, Field
+from langchain_core.runnables import RunnableLambda
 from operator import itemgetter
 import gradio as gr
 import time
@@ -21,14 +23,48 @@ import numpy as np
 # Load environment variables
 load_dotenv()
 
-# Define the multi-query prompt template
-MULTI_QUERY_TEMPLATE = """You are an AI language model assistant. Your task is to generate five
-different versions of the given user question to retrieve relevant documents about university courses 
-and programs. By generating multiple perspectives on the user question, your goal is to help
-overcome some of the limitations of the distance-based similarity search. 
+# Define the routing model
+class RouteQuery(BaseModel):
+    """Route a user query to the most relevant content type."""
+    content_type: Literal["course", "program", "both"] = Field(
+        ...,
+        description="Route to: 'course' for specific course questions, 'program' for program questions, 'both' when the question involves both or is unclear"
+    )
+
+# Define specialized prompt templates for different content types
+COURSE_QUERY_TEMPLATE = """You are an AI language model assistant. Your task is to generate five
+different versions of the given user question to retrieve relevant documents about university COURSES. 
+Focus on aspects like course content, prerequisites, learning outcomes, examination methods, and specific details.
 Provide these alternative questions separated by newlines.
 
 Original question: {question}"""
+
+PROGRAM_QUERY_TEMPLATE = """You are an AI language model assistant. Your task is to generate five
+different versions of the given user question to retrieve relevant documents about university PROGRAMS. 
+Focus on aspects like program structure, career opportunities, admission requirements, and overall outcomes.
+Provide these alternative questions separated by newlines.
+
+Original question: {question}"""
+
+GENERAL_QUERY_TEMPLATE = """You are an AI language model assistant. Your task is to generate five
+different versions of the given user question to retrieve relevant documents about both university COURSES and PROGRAMS. 
+Ensure a balanced focus on both course-specific details and program-level information.
+Provide these alternative questions separated by newlines.
+
+Original question: {question}"""
+
+# Define the routing prompt
+ROUTER_SYSTEM_TEMPLATE = """You are an expert at routing user questions about university education to the appropriate content type.
+Your task is to determine whether the question is about:
+1. A specific COURSE or course-related information
+2. A specific PROGRAM or program-related information
+3. BOTH when the question involves both courses and programs or when it's unclear
+
+Examples:
+- "What are the prerequisites for DIT134?" -> course
+- "Tell me about the Software Engineering program" -> program
+- "What courses are included in the Data Science master's?" -> both
+- "How many credits do I need?" -> both"""
 
 def get_unique_union(documents: List[List[Document]]) -> List[Document]:
     """Get unique union of retrieved documents."""
@@ -120,6 +156,8 @@ Important rules to follow:
 4. If you're unsure about any information, say so explicitly
 5. When discussing course content, prerequisites, or evaluation methods, quote directly from the source documents when possible
 6. Include the course code (e.g., DIT123) when referring to courses
+7. When listing programs or courses, ensure to enumerate ALL items found in the provided documents, not just a subset
+8. For questions asking about all programs from a specific school/department, make sure to list every program mentioned in the context
 
 Context from documents: {context}
 
@@ -152,8 +190,8 @@ class RAGModel:
         
         # Initialize text splitter with optimized settings for course PDFs
         self.text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=1500,
-            chunk_overlap=150,
+            chunk_size=2000,
+            chunk_overlap=200,
             length_function=len,
             separators=["\n\n", "\n", " ", ""]
         )
@@ -169,8 +207,19 @@ class RAGModel:
             k=3  # Remember last 3 interactions
         )
         
-        # Create multi-query prompt
-        self.multi_query_prompt = ChatPromptTemplate.from_template(MULTI_QUERY_TEMPLATE)
+        # Initialize routing components
+        self.router_prompt = ChatPromptTemplate.from_messages([
+            ("system", ROUTER_SYSTEM_TEMPLATE),
+            ("human", "{question}")
+        ])
+        self.router = self.router_prompt | self.llm.with_structured_output(RouteQuery)
+        
+        # Initialize specialized query prompts
+        self.query_prompts = {
+            "course": ChatPromptTemplate.from_template(COURSE_QUERY_TEMPLATE),
+            "program": ChatPromptTemplate.from_template(PROGRAM_QUERY_TEMPLATE),
+            "both": ChatPromptTemplate.from_template(GENERAL_QUERY_TEMPLATE)
+        }
         
         # Create answer prompt template
         messages = [
@@ -182,23 +231,36 @@ class RAGModel:
         # Initialize conversation chain
         self.qa_chain = None
 
-    def generate_queries(self, question: str) -> List[str]:
-        """Generate multiple versions of the input question."""
-        chain = self.multi_query_prompt | self.llm | StrOutputParser()
+    def route_query(self, question: str) -> str:
+        """Route the query to the appropriate content type."""
+        result = self.router.invoke({"question": question})
+        return result.content_type
+
+    def generate_queries(self, question: str, content_type: str) -> List[str]:
+        """Generate multiple versions of the input question based on content type."""
+        prompt = self.query_prompts[content_type]
+        chain = prompt | self.llm | StrOutputParser()
         queries = chain.invoke({"question": question})
         return [q.strip() for q in queries.split('\n') if q.strip()]
 
-    def retrieve_documents(self, question: str) -> List[Document]:
-        """Retrieve documents using multiple queries."""
-        # Generate multiple queries
-        queries = self.generate_queries(question)
+    def retrieve_documents(self, question: str, content_type: str) -> List[Document]:
+        """Retrieve documents using multiple queries and content type."""
+        # Generate multiple queries based on content type
+        queries = self.generate_queries(question, content_type)
+        
+        # Adjust retrieval parameters based on content type
+        k_values = {
+            "course": 6,     
+            "program": 15,  
+            "both": 15        
+        }
         
         # Get documents for each query
         all_docs = []
         for query in queries:
             docs = self.vector_store.similarity_search(
                 query,
-                k=8,  # Number of documents to retrieve per query
+                k=k_values[content_type],
             )
             all_docs.append(docs)
         
@@ -217,8 +279,11 @@ class RAGModel:
         
         start_time = time.time()
         try:
-            # Retrieve documents using multi-query approach
-            docs = self.retrieve_documents(question)
+            # First, route the query
+            content_type = self.route_query(question)
+            
+            # Retrieve documents using multi-query approach with content type
+            docs = self.retrieve_documents(question, content_type)
             
             # Format documents for the prompt
             docs_content = "\n\n".join([d.page_content for d in docs])
@@ -246,7 +311,7 @@ class RAGModel:
                 if source_name and source_name not in sources:
                     sources.append(source_name)
             
-            # Add source information to the answer
+            # Add source and routing information to the answer
             if sources:
                 answer += f"\n\nSources: {', '.join(sources)}"
             
@@ -256,14 +321,16 @@ class RAGModel:
             
             return {
                 "answer": answer,
-                "source_documents": docs
+                "source_documents": docs,
+                "content_type": content_type
             }
         except Exception as e:
             query_time = time.time() - start_time
             self.metrics.update_query_metrics(False, query_time)
             return {
                 "answer": f"Error processing query: {str(e)}",
-                "source_documents": []
+                "source_documents": [],
+                "content_type": None
             }
 
     def load_documents(self):
@@ -326,7 +393,17 @@ def create_gradio_interface(rag_model: RAGModel):
     def process_query(message: str, history: List[List[str]]) -> str:
         try:
             response = rag_model.query(message)
-            return response["answer"]
+            content_type = response["content_type"]
+            answer = response["answer"]
+            
+            # Add routing information
+            routing_info = {
+                "course": "🎓 Course-specific response:",
+                "program": "📚 Program-specific response:",
+                "both": "🏫 General education response:"
+            }
+            
+            return f"{routing_info.get(content_type, '')} \n\n{answer}"
         except Exception as e:
             return f"Error: {str(e)}"
     
@@ -367,11 +444,16 @@ def create_gradio_interface(rag_model: RAGModel):
                 # System Information Section
                 gr.Markdown("### System Information")
                 gr.Markdown("""
-                - **Model**: GPT-4o-mini
-                - **Embedding Model**: OpenAI Embeddings
+                - **Model**: GPT-4-0125-preview
+                - **Embedding Model**: text-embedding-3-small
                 - **Vector Store**: Chroma
-                - **Search Strategy**: MMR (Maximum Marginal Relevance)
+                - **Search Strategy**: MMR with Content Routing
                 - **Temperature**: 0.1
+                
+                ### Content Types
+                - 🎓 Course-specific information
+                - 📚 Program-specific information
+                - 🏫 General education queries
                 """)
     
     return interface
