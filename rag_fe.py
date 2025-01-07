@@ -110,7 +110,8 @@ class MetricsTracker:
         return summary
 
 # Define the system prompt template
-SYSTEM_TEMPLATE = """You are a helpful course and program information assistant for Gothenburg University. Your role is to provide accurate information about courses and programs based ONLY on the provided course and program documents.
+SYSTEM_TEMPLATE = """You are a helpful course and program information assistant for Gothenburg University. 
+Your role is to provide accurate information about courses and programs based ONLY on the provided course and program documents.
 
 Important rules to follow:
 1. Only answer questions about courses that are explicitly mentioned in the provided documents
