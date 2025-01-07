@@ -148,7 +148,7 @@ class RAGModel:
         )
         
         # Initialize embeddings
-        self.embeddings = OpenAIEmbeddings(openai_api_key=self.openai_api_key)
+        self.embeddings = OpenAIEmbeddings(openai_api_key=self.openai_api_key, model="text-embedding-3-small")
         
         # Initialize text splitter with optimized settings for course PDFs
         self.text_splitter = RecursiveCharacterTextSplitter(
