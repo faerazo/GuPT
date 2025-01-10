@@ -1,0 +1,525 @@
+[
+  {
+    "timestamp": "2025-01-10 23:35:33",
+    "query": {
+      "original_question": "What is the Applied Data Science program about?",
+      "content_type": "program",
+      "generated_queries": [
+        "1. Can you provide an overview of the Applied Data Science program, including its curriculum and key components?",
+        "2. What career paths can graduates of the Applied Data Science program pursue, and what skills do they gain?",
+        "3. What are the admission criteria for the Applied Data Science program, and what prerequisites should applicants have?",
+        "4. How does the Applied Data Science program prepare students for real-world applications and job opportunities in the field?",
+        "5. Could you explain the structure and outcomes of the Applied Data Science program, including any specializations or projects involved?",
+        "What is the Applied Data Science program about?"
+      ]
+    },
+    "retrieval": {
+      "total_documents": 41,
+      "documents": [
+        {
+          "content": "\u2022 debate and discuss the consequences of the technologies with respect to different ethical\nframeworks.\n \n6. Content and structure \nThe programme consists of courses in Data Science and related subjects. The programme\nincludes a total of 120 credits. Of these, 52.5\u00a0credits are compulsory courses in the main field of\nData Science. In addition, an independent degree project of 30 or 60 credits is compulsory. \nThe courses are progressively arranged so that they, within the framework of learning outcomes,\ncontribute separately and jointly, with developing the student's skills and abilities in the field. \nThe academic year is divided into two semesters and four study periods. A semester includes two\nstudy periods, each of 15 credits. Students normally attend two courses in parallel in each study\nperiod. \nThe education is conducted in the form of lectures, seminars, teacher-led exercises, and tutoring\nas well as projects in which students apply and deepen their knowledge. \n\u00a0 \nStudy Process \nThe following compulsory second-cycle courses are included in the main field of Data Science: \n\u2022 Python for Data Scientists, 7.5 hp\n\u2022 Introduction to Data Science, 7.5 credits\n\u2022 Statistical Methods for Data Science, 7.5 credits\n\u2022 Applied Machine Learning, 7.5 credits\n\u2022 Research methods for Data Science, 7.5 credits\n\u2022 Master\u2019s Thesis in Data Science, 30 credits, or Master\u00b4s Thesis in Data Science, 60 credits\n \nIn addition to these compulsory second-cycle courses, students are required to take the first-\ncycle course Databases, 7.5 credits, which is included in the main field of study. \n\u00a0 \nFurthermore, the students are required to take at least one\u00a07.5 credit\u00a0courses\u00a0from the list of\nsemi-compulsory courses. \nThe following semi-compulsory courses are included in the main field of Data Science: \n\u2022 Computational techniques for Large-scale Data, 7.5 credits\n\u2022 Applied Mathematical Thinking, 7.5 credits\n\u2022 Deep Machine Learning, 7.5 credits\n\u2022 Seminar course in Data Science, 7.5 credits",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "applied-data-science-masters-programme.pdf",
+            "page": 3,
+            "source": "./data/programs/pdf/applied-data-science-masters-programme.pdf",
+            "type": "pdf"
+          },
+          "source": "applied-data-science-masters-programme.pdf"
+        },
+        {
+          "content": "\u2022 apply Data Science methods to solving problems in a variety of application areas, and\n\u2022 independently, as well as in cooperation with others, investigate and draw relevant\nconclusions based on the methods of Data Science.\n \nJudgement and approach \nFor a Degree of Master of Science (120 credits) with a major in Data Science the student shall be\nable to \n\u2022 discuss advantages and disadvantages of various techniques and technologies for the\nanalysis, modeling, and management of data,\n\u2022 determine how different Data Science methods may be applicable in different situations,\nand\n(N2ADS) Applied Data Science Master's Programme, 120 credits / Applied Data Science masterprogram, 120\nh\u00f6gskolepo\u00e4ng\nSecond cycle / Avancerad niv\u00e5\n3/6",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "applied-data-science-masters-programme.pdf",
+            "page": 2,
+            "source": "./data/programs/pdf/applied-data-science-masters-programme.pdf",
+            "type": "pdf"
+          },
+          "source": "applied-data-science-masters-programme.pdf"
+        },
+        {
+          "content": "### Welcoming students with backgrounds in many different areas\n\nThe master\u2019s programme in Applied Data Science is designed to be accessible to students with a wide range of bachelor\u2019s degrees, and a master\u2019s education in applied data science will be of benefit to students with backgrounds in many different areas who recognize that being able to work effectively with large data sets will be important in their future careers. Some previous programming experience is required, and the programme builds on this. Some examples of general programming languages that provide a good foundation are Python, Java, C, C++, and C#. Languages such as Matlab, SQL, R, and Prolog do not provide sufficient knowledge.\n\nThis master's programme gives students an overview of the techniques and technologies that are relevant to data science, an appreciation of when and how they can be used, and practical skills for their application.\n\nSince we welcome students with various backgrounds you can help us by downloading and filling in the following form, to help us assess the prerequisites for the program. The form also contains room for your motivation letter. Please submit the form together with your transcripts and other documents in the application system.\n\n[The reason for starting a master's programme in Data Science](https://www.gu.se/en/study-gothenburg/the-it-faculty-launched-a-masters-programme-in-data-science)\n\n### Student interviews\n\n[Fionn Delahunty: From Psychology to Applied Data Science](https://www.gu.se/en/study-gothenburg/psychology-applied-data-science)\n\n[Katalin Ferenc: From Biomedicine to Applied Data Science](https://www.gu.se/en/study-gothenburg/from-biomedicine-to-applied-data-science)\n\n### Alumni interviews\n\n[S\u00f6ren Stahlschmidt: Went directly into a trainee programme at SKF](https://www.gu.se/en/study-gothenburg/open-doors-to-industry-and-academia)",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "applied-data-science-masters-programme-n2ads.md",
+            "source": "./data/programs/md/applied-data-science-masters-programme-n2ads.md",
+            "type": "markdown"
+          },
+          "source": "applied-data-science-masters-programme-n2ads.md"
+        },
+        {
+          "content": "(N2ADS) Applied Data Science Master's Programme, 120 credits / Applied Data Science masterprogram, 120\nh\u00f6gskolepo\u00e4ng\nSecond cycle / Avancerad niv\u00e5",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "applied-data-science-masters-programme.pdf",
+            "page": 0,
+            "source": "./data/programs/pdf/applied-data-science-masters-programme.pdf",
+            "type": "pdf"
+          },
+          "source": "applied-data-science-masters-programme.pdf"
+        },
+        {
+          "content": "This includes the design and analysis of various types of studies in basic research, clinical research and epidemiological research, encompassing experimental, intervention and observational studies. A key component is understanding how data is collected and independently mastering all steps in data management, analysis and visualization. Furthermore, the program aims to develop good practices for planning, documenting, and reporting work, with a focus on reproducibility. The use of AI is integrated both as part of effective workflows and as a method for data analysis.\n\n## Entry requirements\n\nQualification for admission to the Programme in Applied Biostatistics requires:\n\n- Bachelor\u2019s degree or equivalent professional degree of 180 credits in health sciences, economic, natural sciences, or engineering.\n- At least 7.5 credits in statistics.\n- English 6/English B or equivalent and Mathematics 3b/3c or equivalent.\n\n## Degree and main field of study\n\nThis programme leads to a Degree of Master of Medical Science (120 credits) with a major in\u00a0Applied Biostatistics (Medicine masterexamen i huvudomr\u00e5det Till\u00e4mpad Biostatistik).\n\n## Content\n\nThe program consists of a total of 120 credits, with 105 credits allocated to mandatory courses, including a 30-credit thesis, and 15 credits allocated to elective courses. The courses are designed and organized to provide progression within the framework of the program learning outcomes and to collectively offer both breadth and depth in the main field of study.",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "masters-programme-in-applied-biostatistics-syllabusm2sta.md",
+            "source": "./data/programs/md/masters-programme-in-applied-biostatistics-syllabusm2sta.md",
+            "type": "markdown"
+          },
+          "source": "masters-programme-in-applied-biostatistics-syllabusm2sta.md"
+        },
+        {
+          "content": "The first semester begins with an introduction to biostatistics focusing on inference and mathematical foundations, including a review of linear algebra and functions, as well as a course in R programming that covers the basics of programming, data management, analysis and visualization. This is followed by a course in study design and experimental planning, including an introduction to epidemiology, and a course in regression analysis that forms the foundation for several of the advanced courses in biostatistical methods.\n\nThe second semester includes advanced courses in the main field, which together provide comprehensive and in-depth methodological knowledge in biostatistics, with an increased understanding of statistical modelling, and the application of various methods in medical research and life sciences. Example of topics are methods for handling incomplete data, more advanced regression models, and causal inference with methods for mapping causal relationships and concepts such as confounding factors, mediation, directed acyclic graphs (DAGs) and propensity score.\n\nAdditionally, statistical learning is a component of the second semester, covering principles and methods for both unsupervised and supervised learning in regression, classification and clustering, as well as general principles for evaluating predictive analysis and model performance. An important part of the second semester is also a course focusing on health data and questionnaires, which deepens the understanding of handling and analysing data structures typical for medical research and development projects. This includes knowledge and management of registry data and composite outcomes, as well as evaluation of questionnaires, health instruments and scores. The course enhances skills in R programming and supports the student\u2019s development towards a professional role as an independent, applied biostatistician capable of handling all stages of data analysis.",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "masters-programme-in-applied-biostatistics-syllabusm2sta.md",
+            "source": "./data/programs/md/masters-programme-in-applied-biostatistics-syllabusm2sta.md",
+            "type": "markdown"
+          },
+          "source": "masters-programme-in-applied-biostatistics-syllabusm2sta.md"
+        },
+        {
+          "content": "\u25cf be able to follow developments in financial mathematics\n\u25cf be well prepared for work within the financial sector\n\u00a0 \nMathematical statistics \nFor a Degree of Master (120 credits) the student shall also: \n\u25cf be able to understand and independently formulate and analyze statistical models\n\u25cf be able to solve problems and use advanced methods applied in probability theory,\nstochastic processes and statistics\n\u25cf be well acquainted with the computer's role in applied statistics and simulation\n\u25cf be well prepared for postgraduate education within mathematical statistics\u00a0and / or work in\nthe industry that require advanced statistical methods\n \nStatistical learning and AI \nFor a Degree of Master (120 credits) the student shall also: \n\u25cf have the ability to handle large amounts of data and be able to select and apply advanced\nstatistical methods to extract information from them\n\u25cf be able to follow the\u00a0development\u00a0in statistical learning and AI\n\u25cf be familiar with, able to manage and also further develop software used in statistical\nlearning and AI\n\u25cf be well prepared for work\u00a0within AI\n \n6. Content and structure \nWithin the program there is a wide range of courses at the advanced level to choose from, but\nthere is also the possibility to supplement with courses at the undergraduate level (maximum 30\ncredits) and / or within any other subject. One can also include postgraduate courses in\nthe\u00a0education. \n \nThe program has five specializations: \n\u25cf Mathematics\n\u25cf Applied mathematics\n\u25cf Financial mathematics\n\u25cf Mathematical statistics\n\u25cf Statistical learning and AI\n \nThe student will\u00a0in collaboration with the student counselor do an individual study plan\u00a0to\nensure\u00a0the requirements for at least one of the specializations are met at the end of the studies.\nRegardless of the specialization, the course MVA200 Perspectives on Mathematics (7.5 credits)\nis mandatory and should be taken during the first semester of the program. Below are the",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "mathematical-sciences-masters-programme.pdf",
+            "page": 3,
+            "source": "./data/programs/pdf/mathematical-sciences-masters-programme.pdf",
+            "type": "pdf"
+          },
+          "source": "mathematical-sciences-masters-programme.pdf"
+        },
+        {
+          "content": "2. A more specialized knowledge in a chosen subfield that can be used for problem solving\nconnected to an area of current research. \n \n3. Training in constructing mathematical models that capture essential aspects of physical\nphenomena and critically examining their consistence and domain of validity. \n4. Training in using the scientific literature and giving oral and written scientific and popular\npresentations. \n5. The skills necessary for continued individual studies and research in the field of fundamental\nphysics and related areas. \n\u00a0 \n \n6. Content and structure \nThe program contains a mix of theoretical and experimental courses. The first year of the\nprogramme is devoted to course work.\u00a0In the first quarter there are three recommended courses\nthat will set the stage for the rest of program, namely a quantum mechanics course, a data\nanalysis and big data course containing modern tools such as Monte Carlo methods\nand\u00a0machine learning, and a project course aimed at getting exposed to different topics.\u00a0\u00a0 \nAfter this the student is free to set up his or her own programplan from a large selection of\ncourses. There are five different specializations;\u00a0theoretical-, computational-, materials-,\nbiological physics and astronomy and astrophysics.\u00a0\u00a0 \nThe master thesis (30, 45, or\u00a060 credit points) typically includes both literature studies and\nindependent work, and may be done at the University or at company.\u00a0It is presented in a\nseminar and a written report. \nRecommended courses in the first quarter\u00a0 \n\u2022 Learning from data\u00a0\n\u2022 Quantum mechanics + Project course\u00a0 \n\u00a0\nRecommended elective courses.\u00a0 \n\u2022 Computational Physics\n\u2022 Modern astrophysics\n\u2022 Spectroscopy\n\u2022 Statistical physics\n\u2022 Symmetry\n\u2022 Biological and biotechnical physics\n\u2022 Computational materials and molecular physics\n\u2022 Condensed matter physics\n\u2022 Fundamentals of hard and soft materials\n\u2022 Gravitation and cosmology\n\u2022 Stellar physics\n\u2022 Symmetry\n\u2022 Computational continuum physics\n\u2022 Interstellar medium and star formation",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "physics-masters-programme.pdf",
+            "page": 2,
+            "source": "./data/programs/pdf/physics-masters-programme.pdf",
+            "type": "pdf"
+          },
+          "source": "physics-masters-programme.pdf"
+        },
+        {
+          "content": "Judgement and approach \nFor a Degree of Master of Science (120 credits) with a major in Human-centered Artificial\nIntelligence the student shall \n\u2022 demonstrate ability to critically evaluate assumptions, principles, strengths and weaknesses\nof central theories and frameworks in human-centered\u00a0AI,\u00a0\n\u2022 demonstrate ability to compare and contrast AI innovation and application,\u00a0\n\u2022 demonstrate ability to assess and argue for choices and combinations of methods for\norganisational development and AI transformation that take ethics and sustainability into\nconsideration.\u00a0\n \nSustainability labelling \nThe programme is sustainability-related, which means that at least one of the outcomes clearly\nshows that the programme content meets at least one of the University of Gothenburg\u2019s\nconfirmed sustainability criteria. \n \n6. Content and structure \nThe programme departs from the assumption that the development and integration of AI in\neveryday practices requires deep understanding of the relationship between the technology and\nindividuals, groups, organisations, societies, and cultures. It prepares students to take an active\nrole in designing, evaluating and researching how applications of AI are developed,\nimplemented and used. The courses in the first year of the programme give both introductory\nand in-depth knowledge in the central theories in the field, as well as methods for research and\ndevelopment work. \nThe first year\u00a0introduces a wide range of concepts relevant to\u00a0human-centered AI and provides\nstudents with opportunities to develop practical skills for designing experiences with AI,\nevaluating its\u00a0use and defining strategies for its implementation. Throughout the courses of the\nfirst year, students work with a variety of research methods that are useful for both\ncareer\u00a0designing, implementing and evaluating applications of AI, and for the thesis project that\nis the culmination of the programme. The second year provides students with the opportunity to",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "human-centered-artificial-intelligence-masters-programme.pdf",
+            "page": 3,
+            "source": "./data/programs/pdf/human-centered-artificial-intelligence-masters-programme.pdf",
+            "type": "pdf"
+          },
+          "source": "human-centered-artificial-intelligence-masters-programme.pdf"
+        },
+        {
+          "content": "materials presented throughout the programme. \n\u00a0\n2. Methods I, 5 credits \nThis course provides an introduction to qualitative research methods, as well as in-depth\nknowledge and skills in qualitative data collection (e.g., focus groups, interviews,\nobservations) and analysis (e.g., thematic analysis), including analysis software. \n\u00a0\n3. Practicum, 6 credits \nThis course provides students with hands-on experience of research, connection to\nworking life and to promote employability. Students have a senior research mentor and\npartake in multiple aspects of research practice together with their mentors. Students build\ntheir own learning portfolios and career plans in connection to the practicum course. \n\u00a0\n4. Personality Psychology, 9 credits \nThis course focuses on contemporary influential personality theories and how they\ndescribe and explain personality development, stability, change, and individual differences.\nThe course explores possibilities and problems in combining different levels of analyses\nand different methods in order to investigate important questions in the personality\ndomain. The course covers methodological and research issues as well as applications of\npersonality theories. \n\u00a0\n5. Methods II, 5 credits \nThis course provides as introduction to quantitative research methods, discussing core\nconcepts such as statistical inference, measurement, data, reliability and validity. It\nprovides students with in-depth knowledge and skills in quantitative data collection and\nanalysis, including analysis software, with focus on concepts such as test construction and\ntest theory, and related analysis techniques (e.g., correlation, factor analysis). \n\u00a0\n6. Cognitive Psychology, 9 credits \nThe cognitive psychology course provides students with methodology and state-of-the art\nresearch in mental functions and processing, such as memory, learning, decision making,\nattention, and executive functioning. Students will learn how to generate relevant research",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "masters-programme-in-psychological-science.pdf",
+            "page": 3,
+            "source": "./data/programs/pdf/masters-programme-in-psychological-science.pdf",
+            "type": "pdf"
+          },
+          "source": "masters-programme-in-psychological-science.pdf"
+        },
+        {
+          "content": "### Strong and varied research connections\n\nThe Department of Mathematical Sciences has strong traditions in a broad range of research, both in pure and applied mathematics. We are a joint department of two universities in Gothenburg: The University of Gothenburg and Chalmers University of Technology. As the largest department in mathematical sciences in Sweden, we can offer a broad range of courses, which opens up opportunities for collaborations and several specializations. Our programme strives to be at the forefront of mathematical sciences and offers five specializations:\n\n- mathematics\n- applied mathematics\n- mathematical statistics\n- financial mathematics\n- statistical learning and AI\n\nTwo of these specializations are not commonly found in similar programmes: financial mathematics and statistical learning and AI.\n\n### Diverse options for future careers\n\nSome specializations are more theoretical and research-oriented and will prepare you for further research and a career in academia. Other specializations are geared more towards applied mathematics and better prepare you for work within the private sector but could also lead to an academic career. Some specializations, such as mathematical statistics, can be more theoretical or applied depending on your interests\n\nRead more about [Specializations](https://gu.se/en/study-gothenburg/specializations-mathematical-sciences )\n\n[What is it like to study in Gothenburg? Ask our international students!](https://www.gu.se/en/study-gothenburg/contact-a-student)\n\n## Programme structure and content\n\nThere is a high degree of freedom and flexibility in our programme. There is one mandatory course for all specializations: Perspectives in Mathematics. There are two exclusive courses\u2014closed to students outside our programme\u2014that are based on solving real-world problems from industrial partners:",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "mathematical-sciences-masters-programme-n2mat.md",
+            "source": "./data/programs/md/mathematical-sciences-masters-programme-n2mat.md",
+            "type": "markdown"
+          },
+          "source": "mathematical-sciences-masters-programme-n2mat.md"
+        },
+        {
+          "content": "- physics/statistical physics\n- robotics and adaptive systems\n- machine learning with applications\n\n### Educational methods\n\nBesides traditional lectures on simulation and theory of complex systems, the programme is largely based on numerical calculation and simulation projects and, depending on your elective courses, practical work in the robotics lab. We emphasize problem solving in the form of assignments and smaller projects, where problems are presented that require solutions to be implemented with mathematical software (typically Matlab). One of the mandatory courses (Stochastic Optimization Algorithms) also emphasizes the importance of writing and examining structured program code. In several courses you will work in pairs or small groups. A seminar course spans the entire first year, and functions partly as an introduction, but above all provides training in presentation technology by systematically giving and receiving feedback on presentations. This course also includes an ethics element.\n\n### A dynamic and engaging community\n\nThe content of the programme is closely connected to the research on machine learning, genetics and turbulence, information theory, and adaptive systems and robotics performed at Chalmers University of Technology and the University of Gothenburg. There is also a lively exchange with international research groups and regular guest lectures on current research that is often directly related to the course material.\n\n## Programme structure and content\n\nThe first year provides foundational knowledge of complex systems, and provides you the opportunity to design your education according to your own interests. The first semester contains four recommended courses:\n\n- Neural Networks\n- Stochastic Optimization Algorithms\n- Simulation of Complex Systems\n- Dynamical Systems\n\nThe second semester has one recommended course, Computational Biology, and the opportunity to choose elective courses. The following elective courses are recommended:",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "complex-adaptive-systems-masters-programme-n2cas.md",
+            "source": "./data/programs/md/complex-adaptive-systems-masters-programme-n2cas.md",
+            "type": "markdown"
+          },
+          "source": "complex-adaptive-systems-masters-programme-n2cas.md"
+        },
+        {
+          "content": "2024-09-11\n\n\nValid from semester\n\n\nAutumn term 2025\n\n\nDecision maker\n\n\nSahlgrenska Academy\n\n\nStarts at first-cycle level and ends at second-cycle level\n\n\nNo\n\n\n## Specialisations\n\n## Purpose\n\nIncreasingly, research and development in health, healthcare, and life sciences sectors rely to a growing degree on the collection and analysis of data from various sources. This can involve clinical trials, observational studies, or basic research on, for example, biochemical mechanisms, as well as studies of public health, including health risk factors and the effects of health interventions. An important part is also data on patient characteristics, treatments and long-term life outcomes collected in health care and in Swedish and international registers, with applications in research, quality monitoring and resource allocation decisions, among others. Data can be of many , such as biochemical measurements, questionnaire responses, scores, diagnoses, survival rates, genetic factors and molecular biological data, and vary in scope and collection methods.\n\nFor this volume of data to benefit society through development and innovations in both the public and private sectors, expertise is required to collect, manage, visualize, analyse using statistical methods, and draw conclusions based on extensive datasets.\n\nThe purpose of the program is to provide students with a broad and in-depth understanding of statistical methods, including insight into the limitations of these methods and their applicability to different types of data and research questions, as well as how results can be interpreted and generalized. Upon completion of the program, students will be familiar with all stages of a project involving statistical analysis of health-related data.",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "masters-programme-in-applied-biostatistics-syllabusm2sta.md",
+            "source": "./data/programs/md/masters-programme-in-applied-biostatistics-syllabusm2sta.md",
+            "type": "markdown"
+          },
+          "source": "masters-programme-in-applied-biostatistics-syllabusm2sta.md"
+        },
+        {
+          "content": "The program equips you to work with sustainability, and global challenges caused by, for example, climate change and a growing population.\n\n## About\n\nThe oceans remain one of our few unknowns. Marine exploration continues at an unprecedented scale, as does the ever-increasing exploitation of the oceans. More than 70% of the Earth\u2019s surface is covered by oceans. The heat capacity of the oceans is several hundred times larger than the atmospheric, ocean primary production rivals the terrestrial, and 40% of the human population lives less than 50 kilometres from a coastline.\n\nWith the ocean such an integral part\u202fof human life and society, the demand for skilled marine scientists capable of addressing increasing complex problems is growing, with more diverse, challenging, and interesting opportunities compared to just ten years ago. You will gain broad insights to the ocean as a system and graduate armed with the analytical tools and skills necessary to take on complex projects for a wide variety of employers.\n\n### A comprehensive and interdisciplinary programme\n\nThe Department of Marine Sciences harbours all disciplines of marine research: physical oceanography, marine biology, marine chemistry, marine geology, and even conservation of marine heritage. Our approach to the ocean is system oriented and interdisciplinary. We base this approach on the notion that the ocean is different from terrestrial systems in many fundamental ways.\n\nWe have highly qualified lecturers in all core disciplines, positioning themselves and the department at the forefront internationally. The lecturers are well connected nationally as well as internationally, and it is not uncommon for students to pursue part of their education in another university or country.\n\n### Rich and dynamic field work",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "marine-science-masters-programme-n2mav.md",
+            "source": "./data/programs/md/marine-science-masters-programme-n2mav.md",
+            "type": "markdown"
+          },
+          "source": "marine-science-masters-programme-n2mav.md"
+        },
+        {
+          "content": "Programme Syllabus  Reg.no. GU\n2022/2772University of Gothenburg\nFACULTY OF SCIENCE\nComplex Adaptive Systems, Master's Programme, 120\ncredits\nComplex Adaptive Systems, Master Program, 120 h\u00f6gskolepo\u00e4ng \nProgramme code: N2CAS\n \nSecond cycle / Avancerad niv\u00e5 \n \n \n1. Confirmation \nThis programme syllabus was confirmed by the Faculty of Science on 17-10-2006 (G) and was\nlast revised on 10-10-2022 (GU 2022/2772) by the Dean of the Faculty to be valid from 10-10-\n2022, Autumn semester 2023. \nResponsible Department/equivalent: Department of Physics \n \n2. Purpose \nToday we are forced to understand the dynamics of increasingly complex phenomena where\nstandard simulation methods are inadequate.\u00a0An example are fluctuations of share and option\nprices determining the stability of our economy.\u00a0Other examples are the dynamics of dust\nparticles in the exhaust of diesel engines, the dynamics of biological or artificial populations, or\neven the climate. \nAt the same time artificial intelligence and machine learning, using for example artificial neural\nnetworks, are also topics that can be described as complex systems.\u00a0\u00a0 \nThe aim of the programme is twofold: first to demonstrate and teach how to understand and\nmodel the behaviour of complex systems (occuring for instance in the context of evolution,\nchaos, and societal systems), and second to gain an understanding of and hands-on practice in\nusing\u00a0adaptive systems and machine learning.\u00a0 \nThe computer modeling and analytical skills acquired in the programme open a wide range of\npossibilities on the employment market.\u00a0The interdisciplinary nature of the programme in\nparticular has proven to be an asset on the job market.\u00a0As far as industry is concerned, our\nstudents have found employment in software development and consulting, in research and\ndevelopment, management, in the financial sector. Many jobs are related to machine learning\nand autonomous systems.\u00a0Quite a few students also continue towards a PhD in a wide spectrum",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "complex-adaptive-systems-masters-programme.pdf",
+            "page": 0,
+            "source": "./data/programs/pdf/complex-adaptive-systems-masters-programme.pdf",
+            "type": "pdf"
+          },
+          "source": "complex-adaptive-systems-masters-programme.pdf"
+        },
+        {
+          "content": "### Alumni interviews\n\n[S\u00f6ren Stahlschmidt: Went directly into a trainee programme at SKF](https://www.gu.se/en/study-gothenburg/open-doors-to-industry-and-academia)\n\n[Nathalie Gocht: From Applied Data Science to the startup world](https://www.gu.se/en/study-gothenburg/from-applied-data-science-to-the-startup-world)\n\n[Razan Ghzouli: Pursuing a PhD degree in Software Engineering](https://www.gu.se/en/study-gothenburg/razan-is-pursuing-a-phd-degree-in-software-engineering)\n\n## Programme structure and content\n\nThis two-year programme includes the following compulsory courses that provide a core within data science:\n\n- Introduction to Data Science\n- Python for Data Scientists\n- Applied Mathematical Thinking\n- Statistical Methods for Data Science\n- Applied Machine Learning\n- Computational Techniques for Large-Scale Data\n- Research Methods for Data Science\n- Master\u2019s Thesis in Data Science\n\nApplied data science is multidisciplinary by nature, and the programme is designed to allow space for you to create your own profile by choosing optional courses. You can choose courses in areas where data science methods can be applied, or courses in technical areas that feature techniques and technologies that complement those introduced in the programme's mandatory courses. You are particularly encouraged to supplement the mandatory courses that provide a core in data science with optional second-cycle courses in the area of your bachelor\u2019s degree.\n\n## Who should apply?\n\nThe two-year master\u2019s programme in Applied Data Science is an international full-time on-campus programme open to both Swedish and international applicants. The programme is available to students from diverse backgrounds with basic programming skills.\n\nIf you have some previous programming experience and recognize that being able to work effectively with large data sets will be important in your future career, then apply to the master\u2019s programme in Applied Data Science.\n\n## Prerequisites and selection",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "applied-data-science-masters-programme-n2ads.md",
+            "source": "./data/programs/md/applied-data-science-masters-programme-n2ads.md",
+            "type": "markdown"
+          },
+          "source": "applied-data-science-masters-programme-n2ads.md"
+        },
+        {
+          "content": "## Prerequisites and selection\n\n### Entry requirements\n\nA Bachelor's degree of 180 credits including an independent project (degree project) of at least 15 credits or equivalent.\n\n7\\\\.5 credits from courses in programming in a general-purpose programming language or equivalent, and 7.5 credits mathematics or statistics, no courses on pre-university level.\n\nApplicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.\n\n### Selection\n\nThe selection is based on (i) a motivational letter, (ii) grades from previous higher education. The motivational letter should clearly explain the motivation for choosing this programme and this institution. The letter should introduce the applicant both personally and professionally, and discuss the relevance of the applicant's Bachelor's degree subject to Applied Data Science. The document must be entirely unique, i.e. it must not contain any part which is copied from any other source (with the exception of explicit quotations). Applications will be considered only if a Motivational Letter is included. Please use the form below and upload it together with your other documents (CV, transcripts, etc.) when you apply for the programme at universityadmissions.se.\n\n[Self assessment form and motivational letter](//www.gu.se/sites/default/files/2023-03/N2ADSself-assessment%20form2023-fill.pdf)\n\n## After graduation\n\nGraduates of the programme will receive the degree Master of Science in Applied Data Science.\n\nWith this programme you will obtain advanced knowledge in applied data science, and once the programme is completed you will be able to either\n\npursue a specialist career in industry or move ahead in academic\n\nresearch.\n\nYou will be prepared to work with Big Data in your\n\nfuture career. You will learn about different data science methods,\n\ntheir applicability, and advantages and disadvantages of different",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "applied-data-science-masters-programme-n2ads.md",
+            "source": "./data/programs/md/applied-data-science-masters-programme-n2ads.md",
+            "type": "markdown"
+          },
+          "source": "applied-data-science-masters-programme-n2ads.md"
+        },
+        {
+          "content": "\u2022 Computational techniques for Large-scale Data, 7.5 credits\n\u2022 Applied Mathematical Thinking, 7.5 credits\n\u2022 Deep Machine Learning, 7.5 credits\n\u2022 Seminar course in Data Science, 7.5 credits\n\u2022 Project in Data Science, 7.5 credits\n\u2022 Computational methods for Bioinformatics, 7.5 credits\n\u2022 Design of AI-systems, 7.5 credits\n\u2022 Machine learning for natural language processing, 7.5 credits\n\u2022 Advanced topics in Machine learning, 7.5 credits\n\u2022 Advanced databases, 7.5 credits\n\u2022 Causality and causal inference, 7.5 credits\n\u2022 Research-oriented course in data science and AI, 7.5 credits\u00a0\n(N2ADS) Applied Data Science Master's Programme, 120 credits / Applied Data Science masterprogram, 120\nh\u00f6gskolepo\u00e4ng\nSecond cycle / Avancerad niv\u00e5\n4/6",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "applied-data-science-masters-programme.pdf",
+            "page": 3,
+            "source": "./data/programs/pdf/applied-data-science-masters-programme.pdf",
+            "type": "pdf"
+          },
+          "source": "applied-data-science-masters-programme.pdf"
+        },
+        {
+          "content": "the following three specialization\u00a0courses: \n\u25cf MSA101 Computational methods for Bayesian statistics\n\u25cf MSA220 Statistical learning for big\u00a0data\n\u25cf MSF100 Statistical inference principles\nand an independent degree project within the course MSA910 Thesis in Mathematical Statistics\nfor the two-year Masters Program in Mathematical Sciences (30 credits). \n \nThe specialization Statistical learning and AI \nFor a degree in Statistical learning and AI following three compulsory specialization courses are\ntaken:\n(N2MAT) Mathematical Sciences, Master's Programme, 120 credits / Matematiska vetenskaper, masterprogram,\n120 h\u00f6gskolepo\u00e4ng\nSecond cycle / Avancerad niv\u00e5\n6/8",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "mathematical-sciences-masters-programme.pdf",
+            "page": 5,
+            "source": "./data/programs/pdf/mathematical-sciences-masters-programme.pdf",
+            "type": "pdf"
+          },
+          "source": "mathematical-sciences-masters-programme.pdf"
+        },
+        {
+          "content": "Today\u2019s society is becoming increasingly digitalized, and vast amounts of data are being collected that require analysis \u2013 especially in the health and life science fields. How should we interpret and understand all this complex data? How can we use the data to develop pharmaceuticals, treatments, and medical devices? These are some of the challenges we face today. Biostatisticians play a crucial role here. Through their expertise in handling and analyzing data, they contribute to advancing research and creating societal benefits. There is a great demand for biostatisticians today.\n\nThe programme provides you with knowledge of key theories and models in statistics. You will study for two years. The language of instruction is English. The goal is to give you practical experience and the tools you need to work independently as a biostatistician. You will learn to handle all steps in the data analysis of health-related data. This includes the design and analysis of various types of studies, related to basic medical research, clinical research, and population studies.\n\nWe provide you with the knowledge of basic and advanced statistical methods and models, how they can be used, how to interpret the results, and what conclusions can or cannot be drawn. You will also learn to program in R, which is an important and widely used tool for data management, analysis, and visualization. Additionally, you will gain knowledge of AI and machine learning and how these can be used as methods to analyze data and create a more efficient workflow.\n\n### Who can apply\n\nWe welcome all students with background in health sciences, economics, natural sciences, and engineering, with an interest in data, statistics, and life sciences to apply for the programme. We offer 25 places each fall.\n\n### What we offer\n\n- International environment: meet teachers and students from around the world\n\n- Mix of students: study with doctors, economists, engineers, and other professionals",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "masters-programme-in-applied-biostatistics-m2sta.md",
+            "source": "./data/programs/md/masters-programme-in-applied-biostatistics-m2sta.md",
+            "type": "markdown"
+          },
+          "source": "masters-programme-in-applied-biostatistics-m2sta.md"
+        },
+        {
+          "content": "development, management, in the financial sector. Many jobs are related to machine learning\nand autonomous systems.\u00a0Quite a few students also continue towards a PhD in a wide spectrum\nof academic fields. \n(N2CAS) Complex Adaptive Systems, Master's Programme, 120 credits / Complex Adaptive Systems, Master\nProgram, 120 h\u00f6gskolepo\u00e4ng\nSecond cycle / Avancerad niv\u00e5",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "complex-adaptive-systems-masters-programme.pdf",
+            "page": 0,
+            "source": "./data/programs/pdf/complex-adaptive-systems-masters-programme.pdf",
+            "type": "pdf"
+          },
+          "source": "complex-adaptive-systems-masters-programme.pdf"
+        },
+        {
+          "content": "Third semester\n\n- Survival analysis, 7.5 credits\n- Machine learning and AI, 7.5 credits\n- Elective courses, 15 credits\n\nFourth semester\n\n- Master\u2019s Thesis in Applied Biostatistics, 30 credits\n\n## Objectives\n\nThe objectives of the program, in addition to the general learning outcomes specified for the master\u2019s degree in the Higher Education Ordinance (SFS 1993:100, System of Qualifications, Appendix 2), are the following local learning outcomes:\n\n_Knowledge and understanding_\n\nFor a Degree of Master, the student shall\n\n- demonstrate knowledge and understanding of basic as well as advanced methods and models in biostatistics, with in-depth knowledge of commonly used analysis methods and their applications.\n- be able to describe different types of studies, including their areas of application and limitations, as well as the data structures and analysis methods commonly used in these study types.\n- be able to explain the components of a project involving quantitative data, with a particular focus on the parts related to data management, analysis, and interpretation.\n\n_Competence and skills_\n\nFor a Degree of Master, the student shall\n\n- integrate and apply knowledge from biostatistics to scientific questions, contribute to the design of of studies, make appropriate methodological choices, and analyse, assess, and manage complex issues and situations related to health data.\n- independently and effectively manage of data by transforming, converting, and adapting data for analysis, as well as performing the chosen analyses and visualizing data using statistical programming.\n- verbally and in writing present results and conclusions based on data analysis, including a clear description, with justification, of the chosen method, and provide interpretations of results and conclusions in a suitable manner for different audiences.\n\n_Judgement and approach_\n\nFor a Degree of Master, the student shall",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "masters-programme-in-applied-biostatistics-syllabusm2sta.md",
+            "source": "./data/programs/md/masters-programme-in-applied-biostatistics-syllabusm2sta.md",
+            "type": "markdown"
+          },
+          "source": "masters-programme-in-applied-biostatistics-syllabusm2sta.md"
+        },
+        {
+          "content": "The course also provides a broad overview of the research field of investigative journalism.\n\nThe second course of the programme, JU 2602, Data Journalism and Visualisation, 15 credits, is about using data for journalistic purposes to draw your own conclusions. The course covers various methods for collecting, cleaning, evaluating, analysing and presenting data.\n\nStudents will use current tools to manage and visualise data and carry out projects that apply the entire data journalism process. With these skills as a basis, students are trained to scrutinise and evaluate data, data processing and data presentation from source-critical and media-ethical perspectives.\n\nAs data journalism and visualisation is a growing field in the industry, there is also current research that can contextualise and deepen the understanding of this journalistic genre.\n\nThe third course, JU 2600, Investigative Journalism Across Borders, 15 credits, aims to sharpen the discussions towards international networks and transnational investigative journalism (cross-border collaborations). This type of journalistic project places advanced demands on project management, intercultural competence, clarity in research, hypothesis testing and verification of facts.\n\nThe course also includes a theoretical component in the form of a comparative perspective on the rest of the world, its media systems and journalistic cultures. This perspective develops students' ability to scrutinise investigative journalism from political and ethical perspectives and to discuss its future development.\n\nThe course includes an elaborated project plan and preparatory research for a cross-border project, which students can continue to work on during the final course of the programme.\n\nThe programme ends either with the course Master\u2019s thesis in investigative journalism, JU2603, 15 credits, or with the course Master\u2019s project in investigative journalism, JU2604, 15 credits.",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "masters-programme-in-investigative-journalism-syllabus-s2jou.md",
+            "source": "./data/programs/md/masters-programme-in-investigative-journalism-syllabus-s2jou.md",
+            "type": "markdown"
+          },
+          "source": "masters-programme-in-investigative-journalism-syllabus-s2jou.md"
+        },
+        {
+          "content": "### A multidisciplinary area\n\nThe program offers a unique environment for future UX designers, developers, researchers, business developers, policy analysts, and compliance officers looking to specialize in Human-centered Artificial Intelligence.\n\nAs the field of HCAI is multidisciplinary, students come into contact and engage with leading researchers across several subject areas including Human-computer Interaction, Information Systems, Cognition Science, Applied IT, and Data Science.\n\nThe pedagogical approach taken encourages active participation where students are expected to engage in discussion and hands-on activities while documenting their progression through a portfolio of work that shows both their learning in the field of HCAI and the development of their own interests. These interests can then be further explored through a research-based thesis and the opportunity to undertake an internship within a research group or at a company or organization.\n\nThe program is found at the vibrant Campus Lindholmen, a technological hub with a large industry presence including such companies and organizations as Zenseact, RISE, Ericsson, and Volvo, to name a few.\n\n## Who should apply?\n\nThe HCAI program strives for a diverse student group and welcomes students with a bachelor's degree from different fields including cognitive science, information systems, and interaction design.\n\nApplications are welcome from those with degrees in other areas if all required prerequisites are met. These prerequisites include 7.5 credits of programming in a general programming language, 7.5 credits in artificial intelligence or machine learning, and 7.5 credits in human-computer or human-technology interaction.\n\n## Prerequisites and selection\n\n### Entry requirements\n\nBachelor's degree 180 credits including an independent project (degree project) of at least 15 credits or equivalent.",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "human-centered-artificial-intelligence-masters-programme-t2hai.md",
+            "source": "./data/programs/md/human-centered-artificial-intelligence-masters-programme-t2hai.md",
+            "type": "markdown"
+          },
+          "source": "human-centered-artificial-intelligence-masters-programme-t2hai.md"
+        },
+        {
+          "content": "The first three semesters consist of courses in the main areas of psychological science.\n\n\u2022 Psychology as a Science\n\n\u2022 Personality Psychology\n\n\u2022 Cognitive Psychology\n\n\u2022 Social Psychology\n\n\u2022 Lifespan Developmental Psychology\n\n\u2022 Human Neuropsychology\n\nEach semester also includes courses on research methods (a total of six). By the end of the programme, you will have acquired an arsenal of methodological and statistical tools.\n\nThe programme includes a three-semester practicum course, in which you will work in one of the several research groups at the Department of Psychology.\n\nIn your fourth semester, you will complete your thesis, which provides you with an opportunity to begin to carve out your research specialty and gain experience in planning, executing, and reporting psychological science.\n\n## Who should apply?\n\nDo you want to actively engage with a research group and contribute to an active learning process?\n\nDo you see yourself eventually pursing a PhD in psychology or conducting research as part of your career?\n\nAre you interested in psychology research and want to develop the skills needed to contribute to the field?\n\nIf you have a bachelor\u2019s degree in Psychology, and want to deepen and broaden your knowledge and skills, apply for the master\u2019s programme in Psychological Science.\n\n## Prerequisites and selection\n\n### Entry requirements\n\nThe applicant needs to have achieved a Bachelor's degree of at least 180 credits with a major in Psychology (or equivalent), and a minimum of 15 credits in research methods. The applicant must also prove skills in the English language at the level of at least English 6 / English B or equivalent level on an internationally recognized test such as TOEFL or IELTS.\n\nPotential candidates will be asked to submit motivation letters indicating their academic and professional background/experience as well as how the programme will benefit their defined professional career goals.\n\n### Special instructions for application",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "masters-programme-in-psychological-science-s2map.md",
+            "source": "./data/programs/md/masters-programme-in-psychological-science-s2map.md",
+            "type": "markdown"
+          },
+          "source": "masters-programme-in-psychological-science-s2map.md"
+        },
+        {
+          "content": "## Programme structure and content\n\n**The first semester** explores the historical development of the international system, with a focus on the relations among international organisations and between international organisations and various state and non-state actors. You will explore the primary policy theories in areas such as peace and conflict studies, and economic, social, and political development.\n\n**The second and third semesters** offer opportunities for pursuing your individual areas of interest through elective courses, an optional internship, or studies abroad. A research methods course in the third semester equips you with advanced knowledge of social science research methods that will assist in your thesis work. We offer students the choice of four different courses, two in quantitative and two in qualitative research methods, which cater to beginners as well as students with more advanced methods backgrounds.\n\n**The fourth semester** offers an opportunity to apply and further develop your methodological skills and area expertise from previous semesters in your final master\u2019s thesis.\n\n## Who should apply?\n\n- Do you want to gain a deeper understanding of the international system and processes of change?\n- Are you intrigued by who makes policies, the ideas and interests involved behind them, and who is affected by them?\n- Do you want the skills to find, evaluate, integrate, and generate information and knowledge on complex issues of relevance to the international policy community?\n- Do you want to study in an international environment with other students from all over the world?\n\n\nThen apply for the Master\u2019s Programme in International Administration and Global Governance.\n\n## Prerequisites and selection\n\n### Entry requirements",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "masters-programme-in-international-administration-and-global-governance-s2iag.md",
+            "source": "./data/programs/md/masters-programme-in-international-administration-and-global-governance-s2iag.md",
+            "type": "markdown"
+          },
+          "source": "masters-programme-in-international-administration-and-global-governance-s2iag.md"
+        },
+        {
+          "content": "The third semester includes mandatory courses in survival analysis and machine learning and AI, as well as elective courses. The survival analysis course provides an in-depth study of specialized methods for handling and analysing data containing information about time-to-event. The course on machine learning and AI builds on and applies the fundamental principles of statistical learning covered in the second semester, offering a broad overview of current methods for analysis. The elective courses allow for individual specialization, where students can broaden or deepen their knowledge based on their interests, prior knowledge, and the current course offerings. They can choose from courses in areas such as health economics, clinical trials, or additional statistical methods and their applications in life sciences. The institution will offer at least 15 credits of elective courses, but students also have the option to select advanced-level courses outside the program, provided they meet the prerequisites for those courses.\n\nIn the program, students will sit in on statistical consultations given as part of the statistical advisory services provided by the Department of Medicine, which will enhance their understanding of the practice of biostatistics in scientific projects.\n\nThe sequence of the courses may be subject to change. The program is offered full-time and includes the following courses:\n\nProgram structure\n\nFirst semester\n\n- Introduction to biostatistics, 9 credits\n- R programming for applied biostatistics, 6 credits\n- Study and experimental design, 7.5 credits\n- Regression analysis, 7.5 credits\n\nSecond semester\n\n- Causal inference, 7.5 credits\n- Health data and questionnaires, 7.5 credits\n- Statistical learning, 7.5 credits\n- Advanced statistical methods, 7.5 credits\n\nThird semester\n\n- Survival analysis, 7.5 credits\n- Machine learning and AI, 7.5 credits\n- Elective courses, 15 credits\n\nFourth semester\n\n- Master\u2019s Thesis in Applied Biostatistics, 30 credits",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "masters-programme-in-applied-biostatistics-syllabusm2sta.md",
+            "source": "./data/programs/md/masters-programme-in-applied-biostatistics-syllabusm2sta.md",
+            "type": "markdown"
+          },
+          "source": "masters-programme-in-applied-biostatistics-syllabusm2sta.md"
+        },
+        {
+          "content": "The second semester has one recommended course, Computational Biology, and the opportunity to choose elective courses. The following elective courses are recommended:\n\n- Information Theory of Complex Systems\n- Autonomous robots\n- Intelligent agents\n- Stochastic processes in physics, chemistry and biology\n- Advanced machine learning with neural networks\n\nDuring the third semester, you can opt to begin a full-year master\u2019s thesis, or you can choose additional elective courses, including the recommended Humanoid Robotics and Game Theory and Rationality.\n\nThe final semester is dedicated to your individual master\u2019s thesis, which can be completed in collaboration with a company or within academia.\n\n## Who should apply?\n\nAre you interested in programming, artificial intelligence, and complexity in society and the natural world?\n\nDo you want the skills to contribute to the future of autonomous systems, robotics, and other quickly developing technologies?\n\nDo you want to gain practical experience in machine learning, game theory, and other methods commonly applied to complex systems?\n\nThen apply for the master\u2019s programme in Complex Adaptive Systems.\n\n## Prerequisites and selection\n\n### Entry requirements\n\nA Bachelor's degree or the equivalence to 180 Swedish credit points (p) or 180 ECTS credits at an accredited university. The programme is open to international and domestic students with a degree in the Natural, Engineering, or Mathematical Sciences. At least 30 credits of mathematics (including linear algebra and analysis) and programming. Applicants must prove their knowledge of English: English 6/English B from Swedish Upper Secondary School or the equivalent level of an internationally recognized test, for example TOEFL, IELTS.\n\n### Selection\n\nSelection is based upon the number of credits from previous university studies, maximum 165 credits.\n\n## After graduation",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "complex-adaptive-systems-masters-programme-n2cas.md",
+            "source": "./data/programs/md/complex-adaptive-systems-masters-programme-n2cas.md",
+            "type": "markdown"
+          },
+          "source": "complex-adaptive-systems-masters-programme-n2cas.md"
+        },
+        {
+          "content": "During the third year the student can choose optional courses within or outside the main field of\nstudy. \nProgression in the programme is based on the results in previous courses and projects. To\ngraduate from the programme in the main field of study students must successfully complete all\ncompulsory programme courses. \nThe following compulsory courses are included in the programme: \n\u2022 Discrete Mathematics, 7.5 credits\n\u2022 Fundamentals of Programming, 7.5 credits\n\u2022 Object-Oriented Programming, 7.5 credits\n\u2022 Project: Agile Software Project Management, 7.5 credits\n\u2022 Data Management, 7.5 credits\n\u2022 Requirements Engineering, 7.5 credits\n\u2022 Data Structures and Algorithms, 7.5 credits\n\u2022 Project: Systems Development, 7.5 credits\n\u2022 Fundamentals of Software Architecture, 7.5 credits\n\u2022 Distributed Systems, 7.5 credits\n\u2022 Human-Computer Interaction, 7.5 credits\n\u2022 Project: Web Engineering, 7.5 credits\n\u2022 Development of Embedded and Real Time Systems, 7.5 credits\n\u2022 Software Quality and Testing, 7.5 credits\n\u2022 Project: Data-Driven Software Engineering for Cyber Physical Systems, 7.5 credits\n\u2022 Advanced Programming, 7.5 credits\n\u2022 Management and Leadership, 7.5 credits\n\u2022 Research Methods in Software Engineering, 7.5 credits\n\u2022 Bachelor Thesis in Software Engineering and Management, 15 credits\n\u00a0 \nOptional courses \nWithin the programme, students can study optional courses within or outside the main field of\nstudy to an extent of 30 credits. The curriculum includes the following optional courses within\nthe main field of study Software Engineering: \n\u2022 Software Innovation, 15 credits\n\u2022 Change Management in Software Development Organizations, 7.5 credits\n\u2022 AI Engineering, 7.5 credits\n\u2022 Software Engineering for Data-Intensive AI Applications, 15 credits\n\u00a0 \n\u00a0 \n \n7. Guaranteed admission  \nStudents who follow the study programme at the prescribed pace have guaranteed admission to\ncompulsory and optional courses provided that specific entry requirements are fulfilled and the",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "software-engineering-and-management-bachelors-programme.pdf",
+            "page": 4,
+            "source": "./data/programs/pdf/software-engineering-and-management-bachelors-programme.pdf",
+            "type": "pdf"
+          },
+          "source": "software-engineering-and-management-bachelors-programme.pdf"
+        },
+        {
+          "content": "and at least three of the following specialization\u00a0courses: \n\u25cf MMA110 Integration theory\n\u25cf MMA630 Computational methods for stochastic differential equations\n\u25cf MMA711 Financial derivatives and partial differential equations\n\u25cf MSA101 Computational methods for Bayesian statistics\n\u25cf MSA220 Statistical learning for big\u00a0data\n\u25cf MSA350 Stochastic analysis\n\u25cf MSA400 Financial risk\n\u25cf MSA410 Financial time series\n\u00a0 \nand at least two of the following\u00a0courses: \n\u25cf GM1002 Financial institutions and markets\n\u25cf GM0704 Advanced macroeconomic theory\n\u25cf GM1015 Advanced corporate finance\n\u25cf GM1014 Applied portfolio management\n\u00a0 \nand an independent degree project within one of the courses: \n\u25cf MMA930 Thesis in Mathematics for the two-year Masters Program in Mathematical\nSciences, specialization Financial\u00a0mathematics (30 credits), or\n\u25cf MSA930 Thesis in Mathematical Statistics for the two-year Masters Program in\nMathematical Sciences, specialization Financial\u00a0mathematics (30 credits), depending on\nwhether the student\u00a0intend to graduate in mathematics or mathematical statistics.\n\u00a0 \nFor\u00a0a degree in mathematics at least one of the following courses are taken: \n\u25cf MMA110 Integration Theory\n\u25cf MMA630 Computational methods for stochastic differential equations\n\u25cf MMA711 Financial derivatives and partial differential equations\n\u00a0 \nThe specialization Mathematical statistics \nFor a degree\u00a0in Mathematical statistics, courses in mathematical statistics at advanced level of at\nleast 30 credits has to be included. The mathematics course MMA110 Integration theory may be\nincluded in these 30 credits. The courses can be partially selected freely, but one must read the\nmandatory specialization course MSA150 Foundations of probability theory and at least one of\nthe following three specialization\u00a0courses: \n\u25cf MSA101 Computational methods for Bayesian statistics\n\u25cf MSA220 Statistical learning for big\u00a0data\n\u25cf MSF100 Statistical inference principles",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "mathematical-sciences-masters-programme.pdf",
+            "page": 5,
+            "source": "./data/programs/pdf/mathematical-sciences-masters-programme.pdf",
+            "type": "pdf"
+          },
+          "source": "mathematical-sciences-masters-programme.pdf"
+        },
+        {
+          "content": "assess and deal with complex phenomena, issues and situations even with limited\ninformation\n\u2022 demonstrate the ability to identify and formulate issues critically, autonomously and\ncreatively as well as to plan and, using appropriate methods, undertake advanced tasks\nwithin predetermined time frames and so contribute to the formation of knowledge as well\nas the ability to evaluate this work\n\u2022 demonstrate the ability in speech and writing both nationally and internationally to clearly\nreport and discuss his or her conclusions and the knowledge and arguments on which they\nare based in dialogue with different audiences, and\n\u2022 demonstrate the skills required for participation in research and development work or\nautonomous employment in some other qualified capacity.\n\u00a0 \nJudgement and approach \nFor a Degree of Master (120 credits) the student shall \n\u2022 demonstrate the ability to make assessments in the main field of study informed by relevant\ndisciplinary, social and ethical issues and also to demonstrate awareness of ethical aspects\nof research and development work\n\u2022 demonstrate insight into the possibilities and limitations of research, its role in society and\nthe responsibility of the individual for how it is used, and\n\u2022 demonstrate the ability to identify the personal need for further knowledge and take\nresponsibility for his or her ongoing learning.\n\u00a0 \n \nLocal outcomes \n \nKnowledge and understanding \nFor a Degree of Master of Science (120 credits) with a major in Data Science the student shall \n\u2022 describe and compare different techniques for the analysis and management of data.\n \nCompetence and skills \nFor a Degree of Master of Science (120 credits) with a major in Data Science the student shall be\nable to \n\u2022 use tools and technologies for the analysis and management of data,\n\u2022 apply Data Science methods to solving problems in a variety of application areas, and\n\u2022 independently, as well as in cooperation with others, investigate and draw relevant",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "applied-data-science-masters-programme.pdf",
+            "page": 2,
+            "source": "./data/programs/pdf/applied-data-science-masters-programme.pdf",
+            "type": "pdf"
+          },
+          "source": "applied-data-science-masters-programme.pdf"
+        },
+        {
+          "content": "[More information about tuition fees](https://www.gu.se/en/study-in-gothenburg/apply/tuition-fees)\n\nCancelled\n\n\n## Summary\n\nThe programme is not accepting applications for Autumn 2025.\n\nBig Data is taking centre stage in all areas\u2014business and industry, public policy, the life sciences, natural sciences, humanities, and social sciences. People with knowledge of how to process and analyse large amounts of data are becoming increasingly sought after. This full-time on-campus programme consists of courses in applied data science and related subjects.\n\n## About\n\nData science is concerned with extracting meaning from large volumes of data. It is a field that has grown rapidly in recent years as a result of the increasing availability of large data sets and the opportunities and challenges that they present. Central topics within data science include data mining, machine learning, databases, and the application of data science methods in natural sciences, life sciences, business, humanities, and social sciences, as well as in industry and society.\n\n[Watch our film about the programme](https://www.youtube.com/watch?v=7KVxug8RomY)\n\n### Training in the management and analysis of large-scale data\n\nData science is having a big impact on industry. For some companies, being able to handle and analyse massive data sets is central to their business model. Even for other companies, being able to extract information from data (for example, data about customers) can offer crucial competitive advantages. People with knowledge and skills in data science are therefore in high demand, in Gothenburg, in Sweden, and internationally. Similarly, within scientific research, data-intensive scientific discovery is increasingly important in many areas, and researchers need to be able to handle and analyse massive data sets.\n\n### Welcoming students with backgrounds in many different areas",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "applied-data-science-masters-programme-n2ads.md",
+            "source": "./data/programs/md/applied-data-science-masters-programme-n2ads.md",
+            "type": "markdown"
+          },
+          "source": "applied-data-science-masters-programme-n2ads.md"
+        },
+        {
+          "content": "### Professionally oriented\n\nOur programme focuses on the problems of an advanced practitioner and provides you with a solid basis in corporate finance and investment management. You will gain analytical knowledge and an operational understanding of financial concepts, develop skills to apply financial theory to practical problems, and gather working knowledge of empirical tools. Prominent representatives of the business community give seminars and classes, preparing you to enter the job market. Our Finance Laboratory modernizes your education by:\n\n- providing access to real-time data from most global exchanges;\n- providing a continuous flow of updated models and research material from several international investment banks, covering most major companies and fixed income securities;\n- enabling you to monitor realistic positions of securities in terms of valuation and risk;\n- and developing your programming skills to meet the needs of an increasingly technological industry.\n\n### Flexible\n\nYou can choose from various elective courses and tailor your education to your particular interests and goals. Courses like Applied Portfolio Management, Quantitative Finance, and Credit Risk Modelling prepare you for careers in asset management, risk management, security analysis, and sales. On the other hand, courses like Corporate Valuation, Financial Accounting, and Industrial Economics prepare you for careers in commercial banking, management consulting, or finance functions in corporations. You may also broaden your perspective via a wide selection of non-financial elective courses.\n\n### International",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "master-of-science-in-finance-s2fin.md",
+            "source": "./data/programs/md/master-of-science-in-finance-s2fin.md",
+            "type": "markdown"
+          },
+          "source": "master-of-science-in-finance-s2fin.md"
+        },
+        {
+          "content": "of research and development work\n\u2022 demonstrate insight into the possibilities and limitations of research, its role in society and\nthe responsibility of the individual for how it is used, and\n\u2022 demonstrate the ability to identify the personal need for further knowledge and take\nresponsibility for his or her ongoing learning.\n\u00a0 \n \nLocal outcomes \nThe programme aims at: \n1.\u00a0providing general knowledge of the signi?cance of, the problems posed by, and the methods\nemployed to understanding complex systems observed in the Natural and Engineering\nSciences.\u00a0The knowledge builds on that associated typically with the Bachelor\u2019s level, but it goes\nbeyond that in that it should enable the students to develop/apply their own ideas, often in a\nresearch context. \n2.\u00a0enabling students to specialise in one of the following three areas in Complex\nSystems:\u00a0Adaptive Systems (Robotics & Control), Information and Evolution, and Physics of\nComplex Systems.\u00a0These areas are closely connected to research performed at G\u00f6teborg and\nChalmers Universities. \n3. providing the students with the necessary analytical, programming and modeling skills to\nwork successfully under supervision in one of the above areas, or to apply their problem-solving\nskills in a suitable industry project in collaboration with their academic teachers, and last but\nnot least to use their skills effectively in new or initially unfamiliar, interdisciplinary\nenvironments. \n4.\u00a0providing the students with criteria and methods to critically re?ect their results and put them\ninto context. \n5. enabling students to communicate their results, to describe the hypotheses and assumptions\nthese rest on to specialist and to non-specialst audiences. \n6. enabling the students to continue to study or work independently, autonomously, and self\ndirected if necessary, but enabling them to also successfully work within an interdisciplinary\nresearch team. \n \n6. Content and structure",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "complex-adaptive-systems-masters-programme.pdf",
+            "page": 2,
+            "source": "./data/programs/pdf/complex-adaptive-systems-masters-programme.pdf",
+            "type": "pdf"
+          },
+          "source": "complex-adaptive-systems-masters-programme.pdf"
+        },
+        {
+          "content": "**Equipping you for the future**\n\nOur programme prepares you for a future career as a potential manager in the modern organization \u2013 for which innovating is not an option but a necessity. The courses, projects, and thesis work focus on providing you with the right theories, methods, and tools to analyze both theoretical and practical problems, and to design effective solutions for these problems. All organizations must find the balance between efficiency and innovation, and between short-term profitability and long-term development. As a student of the programme, you will develop the skills and insight to overcome these challenges and understand this balance.\n\n**Engaging education and close interaction with industry**\n\nWe provide a highly engaging educational setting in our programme, which includes a range of teaching methods and a mix of individual and group work, along with a pronounced focus on personal and professional development of the student. In several of our courses, we address not only academic but also practical management problems, for example through many types of real business cases. The programme also includes close interaction with the innovation ecosystem in a variety of industries, ranging from guest lectures to group projects, where you will work with and solve practical problems for firms.\n\n**International environment**\n\nThe programme\u2019s international atmosphere allows you to experience other cultures, improve your communication skills, and build a global network of friends. This programme also gives you a unique opportunity to apply for a scholarship which enables you to conduct parts of your master\u2019s thesis abroad. As a student of the master\u2019s programme in Innovation and Industrial Management, you will have several opportunities to go abroad for parts of your studies through exchange agreements and through a double degree agreement, which will be further explained in the Exchange opportunities information.\n\n**How to apply?**",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "master-of-science-in-innovation-and-industrial-management-s2iim-0.md",
+            "source": "./data/programs/md/master-of-science-in-innovation-and-industrial-management-s2iim-0.md",
+            "type": "markdown"
+          },
+          "source": "master-of-science-in-innovation-and-industrial-management-s2iim-0.md"
+        },
+        {
+          "content": "- Varieties of Democracy and Democratization\n\n- The Performance of Democracies\n\n\n### Specialize in your choice of research methods\n\nWe offer highly qualified studies in research methods, including the opportunity to specialize through a selection of four courses:\n\n- Applied Statistical Analysis\n\n- Applied Qualitative Research Methods\n\n- Applied Qualitative Research Methods, problems and design\n\n- Introduction to Applied Research Design and Quantitative Research Methods for Social Scientists\n\n\nTaking one methods course is mandatory, but you can choose to take two. This opportunity provides additional preparation for the job market, where exceptional skills in research methods are as relevant for careers within public policy as the monitoring of political power.\n\n## Programme structure and content\n\n**The first semester** provides advanced knowledge of main research areas within contemporary political science and gives you the opportunity to choose between four research methods courses.\n\n**The second semester** has in-depth research-oriented courses you can choose from, in areas such as quality of government and corruption, electoral studies and public opinion, social dilemmas and environmental politics, and democracy and democratization.\n\n**The third semester** offers a number of different alternatives. You may do an internship for either a half or a full semester, take in-depth courses in political science or additional research methods, or you can choose to study abroad.\n\n**The final semester** concerns your master\u2019s thesis project. You will independently develop and apply the theoretical and methodological knowledge and skills gained throughout the\u00a0programme. Researchers with an international reputation in their field and with solid experience of guiding research projects are available as advisors.\n\n## Who should apply?",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "masters-programme-in-political-science-s2psc.md",
+            "source": "./data/programs/md/masters-programme-in-political-science-s2psc.md",
+            "type": "markdown"
+          },
+          "source": "masters-programme-in-political-science-s2psc.md"
+        },
+        {
+          "content": "9. Methods IV, 5 credits \nThis course provides students with in-depth knowledge and skills in quantitative data\nanalysis, including analysis software, with focus on analysis techniques for testing\nhypotheses regarding relationships between variables (e.g., linear and logistic regression,\npath analysis). \n\u00a0\n10. Lifespan-developmental Psychology, 9 credits \nThis course integrates the full lifespan from infancy through old age. It takes a\nmultidisciplinary and dynamic perspective addressing personal relationships, cognitive\ndevelopment, social, emotional and physical changes and their interactions in relation to\nthe socio-cultural and institutional context of lifespan development. The course\nintegrates current methodology and research questions from both ends of the lifespan\nand links these to more applied contexts. \n\u00a0\n11. Methods V, 5 credits \nThis course provides students with in-depth knowledge and skills in quantitative data\nanalysis, including analysis software, with focus on concepts such as latent variables,\nlongitudinal design and analysis, and analysis techniques such as structural equation\nmodelling. \n\u00a0\n12. Human neuropsychology, 9 credits \nThis course provides a macro-perspective of biological underpinnings of human behavior\nand psychological processes. Students will receive an introduction to brain anatomy and\nneuroimaging and electrophysiological methods. This course highlights the neuronal\nperspective on state-of-the art topics in cognition, lifespan developmental, social and\npersonality psychology and at the same time integrates the behavioral and social\nperspectives discussed in the different prior courses of this programme. \n\u00a0\n13. Methods VI, 5 credits \nThis course provides students with in-depth knowledge and skills in qualitative data\nanalysis, including analysis software, with focus on analysis techniques (e.g., discourse\nanalysis, narrative analysis, IPA). This course will also address mixed methods,",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "masters-programme-in-psychological-science.pdf",
+            "page": 4,
+            "source": "./data/programs/pdf/masters-programme-in-psychological-science.pdf",
+            "type": "pdf"
+          },
+          "source": "masters-programme-in-psychological-science.pdf"
+        },
+        {
+          "content": "\u25cf Models of Computation (LOG260)\n\u25cf Advanced Set Theory (LOG270)\n\u25cf History of Logic (LOG280)\n\u25cf Logic, Games and Automata (LOG290)\n\u25cf Category Theory (LOG350)\nOther courses \u2013\u00a0 for example in computer science, linguistics, mathematics, language technology\nor theoretical philosophy, that by the student's individual mentor are judged to fit with the\nstudent's earlier studies and choice of specialisation \u2013\u00a0 can also be chosen as elective courses. \nAt least one of the elective courses should prepare the student for the degree project and may\nwell be one of the specialisation courses below. \nSpecialisation courses \nPossible choices of content in the specialisation courses LOG230, LOG240, LOG320, LOG330\ninclude: \n\u25cf Formal theories of truth\n\u25cf Computability and complexity theory\n\u25cf Game theory and logic\n\u25cf Philosophy of mathematics\n\u25cf Knowledge representation and logic for the web\n\u25cf Models of arithmetic\n\u25cf Advanced modal logic\nOther specialisations, decided in consultation with the student's mentor, are also possible. \n \n7. Guaranteed admission  \nA student admitted to the programme, and who follows the programme at the prescribed pace\nof study, is subject to limited guaranteed admission. Guaranteed admission applies to all\nobligatory courses. During the second semester the student is guaranteed admission to two\nelective courses (but not necessarily the student's first choices), and equivalently for elective\ncourses during the third semester. \n \n8. Other information \nThe language of instruction is English. \nCourse evaluations involving students are done for every course, and are used in continuous\ndevelopment of the programme. Each semester there is a follow-up in cooperation with the\nprogramme coordinator and student representatives. Overall quality assurance and development\nof courses and the programme as a whole is discussed by all involved teachers at an annual\nprogramme conference. \nThe study programme will be evaluated in accordance with the Policy for Quality Assurance and",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "logic-masters-programme.pdf",
+            "page": 4,
+            "source": "./data/programs/pdf/logic-masters-programme.pdf",
+            "type": "pdf"
+          },
+          "source": "logic-masters-programme.pdf"
+        },
+        {
+          "content": "research.\n\nYou will be prepared to work with Big Data in your\n\nfuture career. You will learn about different data science methods,\n\ntheir applicability, and advantages and disadvantages of different\n\ntechniques. You will have the knowledge and skills necessary to respond\n\nto the challenges and opportunities that emerge as massive data sets\n\nbecome increasingly available.\n\n## Facilities\n\nThe master's programme is given by the Department of Computer Science and Engineering, which is shared between University of Gothenburg and Chalmers University of Technology. The department's main campus is Johanneberg.\n\n[More information about facilities](https://www.gu.se/en/study-gothenburg/campus-johanneberg)\n\n[Self Assessment form and motivational letter External link](https://www.gu.se/sites/default/files/2020-10/N2ADS%20self-assessment%20form_fillable.pdf \"External link\")\n\n[![](/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2020-04/1705524_fionn-delahunty.jpg?media_id=3709&width=1904&height=208)\\\\\n\\\\\nStudent interview: From Psychology to Applied Data Science \\\\\n\\\\\n\\\\\nThe master's programme in Applied Data Science started in 2017 and Fionn Delahunty from Ireland is in the first batch of\u2026](/en/study-gothenburg/from-psychology-to-applied-data-science)\n\n## Study at The University of Gothenburg\n\n[![](/sites/default/files/dynamic-image/dynamic_image_2188_218/public/2020-03/cytonn-photography-ZJEKICY5EXY-unsplash.jpg?media_id=2553&width=1904&height=208)\\\\\n\\\\\nHow to apply \\\\\n\\\\\n\\\\\nTo be admitted to the University, you need to do an online application. The application procedure is straightforward, but it\u2026](/en/study-in-gothenburg/apply)",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "applied-data-science-masters-programme-n2ads.md",
+            "source": "./data/programs/md/applied-data-science-masters-programme-n2ads.md",
+            "type": "markdown"
+          },
+          "source": "applied-data-science-masters-programme-n2ads.md"
+        },
+        {
+          "content": "was revised on 23-05-2018 (reg. no. G 2018/252). See below Confirmation. \n(N2ADS) Applied Data Science Master's Programme, 120 credits / Applied Data Science masterprogram, 120\nh\u00f6gskolepo\u00e4ng\nSecond cycle / Avancerad niv\u00e5\n6/6",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "applied-data-science-masters-programme.pdf",
+            "page": 5,
+            "source": "./data/programs/pdf/applied-data-science-masters-programme.pdf",
+            "type": "pdf"
+          },
+          "source": "applied-data-science-masters-programme.pdf"
+        },
+        {
+          "content": "to the research front in the areas included in the programme, and to work closely with industry,\nthe public sector and civil society. \nThe programme's pedagogy is based on creating a student-centered learning environment that\nencourages participation. The education programme strives for a mixed student group and\ntherefore welcomes students with a bachelor's degree from a number of different fields, including\n(T2HAI) Human-centered Artificial Intelligence Master's Programme, 120 credits / Human-centered Artificial\nIntelligence masterprogram, 120 h\u00f6gskolepo\u00e4ng\nSecond cycle / Avancerad niv\u00e5",
+          "metadata": {
+            "category": "programs",
+            "doc_type": "program",
+            "filename": "human-centered-artificial-intelligence-masters-programme.pdf",
+            "page": 0,
+            "source": "./data/programs/pdf/human-centered-artificial-intelligence-masters-programme.pdf",
+            "type": "pdf"
+          },
+          "source": "human-centered-artificial-intelligence-masters-programme.pdf"
+        }
+      ],
+      "document_types": {
+        "course": 0,
+        "program": 41
+      }
+    },
+    "response": {
+      "answer": "The Applied Data Science Master's Programme at the University of Gothenburg is designed to provide students with advanced knowledge and practical skills in the field of data science. The program focuses on extracting meaning from large volumes of data, which has become increasingly important across various sectors, including business, healthcare, and scientific research.\n\nKey aspects of the program include:\n\n- **Core Courses**: The program includes compulsory courses such as Introduction to Data Science, Python for Data Scientists, Statistical Methods for Data Science, Applied Machine Learning, and Research Methods for Data Science. Students also complete a Master's Thesis in Data Science.\n\n- **Credit Structure**: The program consists of a total of 120 credits, with 52.5 credits allocated to compulsory courses in the main field of Data Science, and an independent degree project of either 30 or 60 credits.\n\n- **Learning Environment**: The education is conducted through lectures, seminars, teacher-led exercises, and projects, allowing students to apply and deepen their knowledge in practical settings.\n\n- **Skills Development**: Students will learn to apply data science methods to solve problems in various application areas, and they will develop skills to independently investigate and draw relevant conclusions based on data science methods.\n\n- **Interdisciplinary Approach**: The program is designed to be accessible to students from diverse academic backgrounds, emphasizing the importance of working effectively with large data sets in future careers.\n\nOverall, the Applied Data Science program aims to equip students with the necessary tools and knowledge to thrive in a data-driven world, preparing them for careers in industry or further academic research.\n\nSources:\n\u2022 applied-data-science-masters-programme-n2ads.md\n\u2022 applied-data-science-masters-programme.pdf\n<details><summary>**See 19 more sources...**</summary>\n\n\u2022 complex-adaptive-systems-masters-programme-n2cas.md\n\u2022 complex-adaptive-systems-masters-programme.pdf\n\u2022 human-centered-artificial-intelligence-masters-programme-t2hai.md\n\u2022 human-centered-artificial-intelligence-masters-programme.pdf\n\u2022 logic-masters-programme.pdf\n\u2022 marine-science-masters-programme-n2mav.md\n\u2022 master-of-science-in-finance-s2fin.md\n\u2022 master-of-science-in-innovation-and-industrial-management-s2iim-0.md\n\u2022 masters-programme-in-applied-biostatistics-m2sta.md\n\u2022 masters-programme-in-applied-biostatistics-syllabusm2sta.md\n\u2022 masters-programme-in-international-administration-and-global-governance-s2iag.md\n\u2022 masters-programme-in-investigative-journalism-syllabus-s2jou.md\n\u2022 masters-programme-in-political-science-s2psc.md\n\u2022 masters-programme-in-psychological-science-s2map.md\n\u2022 masters-programme-in-psychological-science.pdf\n\u2022 mathematical-sciences-masters-programme-n2mat.md\n\u2022 mathematical-sciences-masters-programme.pdf\n\u2022 physics-masters-programme.pdf\n\u2022 software-engineering-and-management-bachelors-programme.pdf\n</details>"
+    },
+    "performance": {
+      "processing_time": 13.003866195678711,
+      "tokens_used": null
+    },
+    "chat_context": {
+      "chat_history": [
+        {
+          "role": "human",
+          "content": "What is the Applied Data Science program about?"
+        },
+        {
+          "role": "ai",
+          "content": "The Applied Data Science Master's Programme at the University of Gothenburg is designed to provide students with advanced knowledge and practical skills in the field of data science. The program focuses on extracting meaning from large volumes of data, which has become increasingly important across various sectors, including business, healthcare, and scientific research.\n\nKey aspects of the program include:\n\n- **Core Courses**: The program includes compulsory courses such as Introduction to Data Science, Python for Data Scientists, Statistical Methods for Data Science, Applied Machine Learning, and Research Methods for Data Science. Students also complete a Master's Thesis in Data Science.\n\n- **Credit Structure**: The program consists of a total of 120 credits, with 52.5 credits allocated to compulsory courses in the main field of Data Science, and an independent degree project of either 30 or 60 credits.\n\n- **Learning Environment**: The education is conducted through lectures, seminars, teacher-led exercises, and projects, allowing students to apply and deepen their knowledge in practical settings.\n\n- **Skills Development**: Students will learn to apply data science methods to solve problems in various application areas, and they will develop skills to independently investigate and draw relevant conclusions based on data science methods.\n\n- **Interdisciplinary Approach**: The program is designed to be accessible to students from diverse academic backgrounds, emphasizing the importance of working effectively with large data sets in future careers.\n\nOverall, the Applied Data Science program aims to equip students with the necessary tools and knowledge to thrive in a data-driven world, preparing them for careers in industry or further academic research."
+        }
+      ],
+      "memory_window_size": 3
+    },
+    "system_info": {
+      "model_version": "gpt-4o-mini",
+      "embedding_version": "text-embedding-3-small",
+      "search_config": {
+        "search_type": "mmr",
+        "k_value": null,
+        "metadata_filter": null
+      }
+    }
+  }
+]
