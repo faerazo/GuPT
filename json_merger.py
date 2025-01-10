@@ -1,10 +1,10 @@
 import json
 
 def merge_json_files():
-    with open('data/json/data.json', 'r', encoding='utf-8') as file:
+    with open('data/json/cse_pdf_data.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
 
-    with open('data/json/website.json', 'r', encoding='utf-8') as file:
+    with open('data/json/cse_website_data.json', 'r', encoding='utf-8') as file:
         website_data = json.load(file)
 
     website_dict = {item['course_code']: item['website'] for item in website_data}
@@ -14,7 +14,7 @@ def merge_json_files():
         if course_code in website_dict:
             course['website'] = website_dict[course_code]
 
-    with open('data/json/merged_data.json', 'w', encoding='utf-8') as file:
+    with open('data/json/cse_merged_data.json', 'w', encoding='utf-8') as file:
         json.dump(data, file, indent=2, ensure_ascii=False)
 
 if __name__ == "__main__":
