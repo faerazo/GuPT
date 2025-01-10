@@ -11,7 +11,7 @@ from langchain.prompts import PromptTemplate, ChatPromptTemplate, SystemMessageP
 from langchain.chains.question_answering import load_qa_chain
 from langchain_core.documents import Document
 from langchain_core.output_parsers import StrOutputParser
-from langchain_core.pydantic_v1 import BaseModel, Field
+from pydantic import BaseModel, Field
 from langchain_core.runnables import RunnableLambda
 from operator import itemgetter
 import gradio as gr
@@ -19,6 +19,7 @@ import time
 from datetime import datetime
 import json
 import numpy as np
+from evaluation import EvaluationSystem, ResponseMetrics
 
 # Load environment variables
 load_dotenv()
@@ -230,6 +231,13 @@ class RAGModel:
         
         # Initialize conversation chain
         self.qa_chain = None
+        
+        # Initialize evaluation system
+        self.evaluation_system = EvaluationSystem()
+        
+        # Add model version tracking
+        self.model_version = "gpt-4-0125-preview"
+        self.embedding_version = "text-embedding-3-small"
 
     def route_query(self, question: str) -> str:
         """Route the query to the appropriate content type."""
@@ -301,6 +309,16 @@ class RAGModel:
                 "chat_history": self.memory.chat_memory.messages
             })
             
+            # Evaluate and validate the response
+            evaluation_metrics = self.evaluation_system.evaluate_response(
+                query=question,
+                response=answer,
+                contexts=[doc.page_content for doc in docs],
+                response_type=content_type,
+                model_version=self.model_version,
+                embedding_version=self.embedding_version
+            )
+            
             # Update memory
             self.memory.save_context({"question": question}, {"answer": answer})
             
@@ -322,7 +340,8 @@ class RAGModel:
             return {
                 "answer": answer,
                 "source_documents": docs,
-                "content_type": content_type
+                "content_type": content_type,
+                "evaluation_metrics": evaluation_metrics
             }
         except Exception as e:
             query_time = time.time() - start_time
@@ -330,7 +349,8 @@ class RAGModel:
             return {
                 "answer": f"Error processing query: {str(e)}",
                 "source_documents": [],
-                "content_type": None
+                "content_type": None,
+                "evaluation_metrics": None
             }
 
     def load_documents(self):
@@ -343,7 +363,9 @@ class RAGModel:
                 print("Loading existing embeddings from Chroma database...")
                 self.vector_store = Chroma(
                     persist_directory="./data/chroma",
-                    embedding_function=self.embeddings
+                    embedding_function=self.embeddings,
+                    collection_metadata={"hnsw:space": "cosine"},
+                    collection_name="course_docs"
                 )
                 collection_size = len(self.vector_store.get()['ids'])
                 print(f"Loaded {collection_size} existing document chunks from database.")
@@ -353,11 +375,13 @@ class RAGModel:
                 documents = process_documents(".")  # Pass the base path
                 chunks = self.text_splitter.split_documents(documents)
                 
+                # Create new Chroma instance with persistence
                 self.vector_store = Chroma.from_documents(
                     documents=chunks,
                     embedding=self.embeddings,
                     persist_directory="./data/chroma",
-                    collection_metadata={"hnsw:space": "cosine"}
+                    collection_metadata={"hnsw:space": "cosine"},
+                    collection_name="course_docs"
                 )
                 
                 collection_size = len(chunks)
@@ -396,6 +420,16 @@ def create_gradio_interface(rag_model: RAGModel):
             content_type = response["content_type"]
             answer = response["answer"]
             
+            # Add evaluation metrics to the response
+            if response.get("evaluation_metrics"):
+                metrics = response["evaluation_metrics"]
+                eval_info = f"\n\n---\nResponse Quality Metrics:"
+                if metrics.semantic_similarity is not None:
+                    eval_info += f"\n- Semantic Similarity: {metrics.semantic_similarity:.3f}"
+                if metrics.context_relevance is not None:
+                    eval_info += f"\n- Context Relevance: {metrics.context_relevance:.3f}"
+                answer += eval_info
+            
             # Add routing information
             routing_info = {
                 "course": "🎓 Course-specific response:",
@@ -408,11 +442,20 @@ def create_gradio_interface(rag_model: RAGModel):
             return f"Error: {str(e)}"
     
     def get_metrics():
-        return rag_model.metrics.get_metrics_summary()
+        """Get both system metrics and evaluation metrics"""
+        system_metrics = rag_model.metrics.get_metrics_summary()
+        evaluation_metrics = rag_model.evaluation_system.get_evaluation_summary()
+        return f"{system_metrics}\n\n{evaluation_metrics}"
+
+    def run_evaluation():
+        """Run the full evaluation suite"""
+        print("Running evaluation suite...")
+        metrics = rag_model.evaluation_system.run_test_suite(rag_model)
+        return rag_model.evaluation_system.get_evaluation_summary()
 
     with gr.Blocks(theme=gr.themes.Soft()) as interface:
         gr.Markdown("""
-        # GuPT: Gothenburg University Information Assistant
+        # G(U)PT: Gothenburg University Information Assistant
         Ask questions about Gothenburg University's courses and programs.
         """)
         
@@ -435,8 +478,13 @@ def create_gradio_interface(rag_model: RAGModel):
                 # System Metrics Section
                 gr.Markdown("### System Metrics")
                 metrics_display = gr.Markdown()
-                refresh_btn = gr.Button("Refresh Metrics", variant="primary")
+                
+                with gr.Row():
+                    refresh_btn = gr.Button("Refresh Metrics", variant="primary")
+                    evaluate_btn = gr.Button("Run Full Evaluation", variant="secondary")
+                
                 refresh_btn.click(get_metrics, outputs=metrics_display)
+                evaluate_btn.click(run_evaluation, outputs=metrics_display)
                 
                 # Initialize metrics display
                 metrics_display.value = get_metrics()
@@ -455,7 +503,7 @@ def create_gradio_interface(rag_model: RAGModel):
                 - 📚 Program-specific information
                 - 🏫 General education queries
                 """)
-    
+
     return interface
 
 def process_documents(base_path):
