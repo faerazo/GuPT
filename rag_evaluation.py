@@ -1,4 +1,3 @@
-import os
 import json
 import numpy as np
 from typing import List, Dict, Any, Optional
@@ -6,10 +5,8 @@ from datetime import datetime
 from dataclasses import dataclass, asdict
 from rouge_score import rouge_scorer
 from sentence_transformers import SentenceTransformer
-from sklearn.metrics import precision_recall_fscore_support
 import pandas as pd
 from pathlib import Path
-from pydantic import BaseModel, Field
 
 @dataclass
 class ResponseMetrics:
@@ -31,6 +28,14 @@ class EvaluationSystem:
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         
+        # Generate timestamp for this evaluation run
+        self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        
+        # Initialize results storage with timestamps
+        self.results_file = self.output_dir / f"evaluation_results_{self.timestamp}.jsonl"
+        self.metrics_file = self.output_dir / f"aggregated_metrics_{self.timestamp}.json"
+        self.summary_file = self.output_dir / f"eval_{self.timestamp}.md"
+        
         # Initialize ROUGE scorer
         self.rouge_scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
         
@@ -39,14 +44,10 @@ class EvaluationSystem:
         
         # Load test cases
         self.test_cases = self.load_test_cases()
-        
-        # Initialize results storage
-        self.results_file = self.output_dir / "evaluation_results.jsonl"
-        self.metrics_file = self.output_dir / "aggregated_metrics.json"
 
     def load_test_cases(self) -> Dict[str, List[Dict]]:
-        """Load test cases from merged_data.json"""
-        with open("data/json/merged_data.json", 'r') as f:
+        """Load test cases from cse_pdf_data.json"""
+        with open("data/json/cse_pdf_data.json", 'r') as f:
             courses_data = json.load(f)
 
         test_cases = {
@@ -66,7 +67,7 @@ class EvaluationSystem:
 
             # Prerequisites test cases
             test_cases["prerequisites"].append({
-                "question": f"What are the prerequisites for {course['course_code']}?",
+                "question": f"What are the prerequisites for the course {course['course_name']} ({course['course_code']})?",
                 "ground_truth": course['entry_requirements'],
                 "type": "prerequisites"
             })
@@ -74,15 +75,20 @@ class EvaluationSystem:
             # Learning outcomes test cases
             if course.get('learning_outcomes'):
                 outcomes = course['learning_outcomes'][0]
+                formatted_outcomes = (
+                    f"Knowledge and Understanding: {outcomes['knowledge_and_understanding']}\n"
+                    f"Competence and Skills: {outcomes['competence_and_skills']}\n"
+                    f"Judgement and Approach: {outcomes['judgement_and_approach']}"
+                )
                 test_cases["learning_outcomes"].append({
-                    "question": f"What are the learning outcomes for {course['course_code']}?",
-                    "ground_truth": str(outcomes),
+                    "question": f"What are the learning outcomes for {course['course_name']} ({course['course_code']})?",
+                    "ground_truth": formatted_outcomes,
                     "type": "learning_outcomes"
                 })
 
             # Assessment test cases
             test_cases["assessment"].append({
-                "question": f"How is {course['course_code']} assessed?",
+                "question": f"How is the course {course['course_name']} ({course['course_code']}) assessed?",
                 "ground_truth": course['assessment'],
                 "type": "assessment"
             })
@@ -210,42 +216,100 @@ class EvaluationSystem:
         return metrics
 
     def get_evaluation_summary(self) -> str:
-        """Generate a human-readable summary of the evaluation results"""
+        """Generate a human-readable summary of the evaluation results and save to file."""
         if not self.metrics_file.exists():
             return """
 ### Evaluation Summary
-No evaluation results available yet. Please run the evaluation first using the 'Run Full Evaluation' button.
+No evaluation results available yet. Please run the evaluation first using the evaluate() method.
 """
             
         try:
             with open(self.metrics_file, 'r') as f:
                 metrics = json.load(f)
 
-            summary = f"""
-### Evaluation Summary
+            summary = f"""# RAG System Evaluation Results
+Generated on: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
 
-#### Overall Statistics
+## Overall Statistics
 - Total Queries Evaluated: {metrics['total_queries']}
 - Average Semantic Similarity: {metrics['average_metrics']['semantic_similarity']:.3f}
 - Average Context Relevance: {metrics['average_metrics']['context_relevance']:.3f}
 
-#### Performance by Query Type:
+## Performance by Query Type:
 """
             for qtype, stats in metrics['by_type'].items():
                 summary += f"""
-- {qtype.replace('_', ' ').title()}:
-  - Count: {stats['count']}
-  - Avg Semantic Similarity: {stats['avg_semantic_similarity']:.3f}
-  - Avg Context Relevance: {stats['avg_context_relevance']:.3f}
+### {qtype.replace('_', ' ').title()}
+- Count: {stats['count']}
+- Average Semantic Similarity: {stats['avg_semantic_similarity']:.3f}
+- Average Context Relevance: {stats['avg_context_relevance']:.3f}
 """
 
-            summary += "\n#### Confidence Intervals (95%):"
+            summary += "\n## Confidence Intervals (95%):"
             for metric, ci in metrics['confidence_intervals'].items():
                 summary += f"""
-- {metric.replace('_', ' ').title()}:
-  - Mean: {ci['mean']:.3f}
-  - Range: [{ci['lower_bound']:.3f}, {ci['upper_bound']:.3f}]
+### {metric.replace('_', ' ').title()}
+- Mean: {ci['mean']:.3f}
+- Range: [{ci['lower_bound']:.3f}, {ci['upper_bound']:.3f}]
 """
+            # Save summary to markdown file with timestamp
+            with open(self.summary_file, 'w') as f:
+                f.write(summary)
+            
+            print(f"Evaluation summary saved to: {self.summary_file}")
             return summary
+            
         except Exception as e:
-            return f"Error generating summary: {str(e)}" 
+            error_msg = f"Error generating summary: {str(e)}"
+            print(error_msg)
+            return error_msg
+
+    def evaluate(self, rag_model) -> None:
+        """Run the evaluation and save results."""
+        print("Running evaluation suite...")
+        metrics = self.run_test_suite(rag_model)
+        self.get_evaluation_summary()
+        print("Evaluation complete. Results saved to data/evaluation/evaluation_summary.md") 
+
+def evaluate(rag_model = None) -> str:
+    """Run evaluation independently and return a summary.
+    
+    If rag_model is not provided, it will create a new instance of RAGModel.
+    """
+    try:
+        if rag_model is None:
+            from rag_fe import RAGModel
+            print("Initializing new RAG model...")
+            rag_model = RAGModel(".")
+            print("Loading documents...")
+            rag_model.load_documents()
+        
+        print("Initializing evaluation system...")
+        evaluator = EvaluationSystem()
+        
+        print("\nRunning test suite...")
+        aggregate_metrics = evaluator.run_test_suite(rag_model)
+        
+        print("\nGenerating evaluation summary...")
+        summary = evaluator.get_evaluation_summary()
+        
+        # Save summary to markdown file
+        summary_file = Path("data/evaluation/evaluation_summary.md")
+        summary_file.parent.mkdir(parents=True, exist_ok=True)
+        summary_file.write_text(summary)
+        
+        print(f"\nEvaluation complete! Results saved to:")
+        print(f"- Summary: {summary_file}")
+        print(f"- Detailed results: {evaluator.results_file}")
+        print(f"- Aggregate metrics: {evaluator.metrics_file}")
+        
+        return summary
+        
+    except Exception as e:
+        return f"Error during evaluation: {str(e)}"
+
+if __name__ == "__main__":
+    # Run evaluation independently
+    summary = evaluate()
+    print("\nEvaluation Summary:")
+    print(summary) 
