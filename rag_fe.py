@@ -22,9 +22,6 @@ from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, H
 from langchain_core.documents import Document
 from langchain_core.output_parsers import StrOutputParser
 
-# Local imports
-from rag_evaluation import EvaluationSystem, ResponseMetrics
-
 # Load environment variables
 load_dotenv()
 
@@ -371,9 +368,6 @@ class RAGModel:
         
     def _initialize_components(self):
         """Initialize all necessary components."""
-        # Initialize evaluation
-        self.evaluation_system = EvaluationSystem()
-        
         # Initialize AI models
         self.llm = ChatOpenAI(
             model_name="gpt-4o-mini",  # do not change this
@@ -570,8 +564,7 @@ class RAGModel:
                     }
                 },
                 "response": {
-                    "answer": result["answer"],
-                    "evaluation_metrics": result.get("evaluation_metrics", None)
+                    "answer": result["answer"]
                 },
                 "performance": {
                     "processing_time": time.time() - start_time,
@@ -621,16 +614,6 @@ class RAGModel:
             "chat_history": self.memory.chat_memory.messages
         })
         
-        # Evaluate response
-        evaluation_metrics = self.evaluation_system.evaluate_response(
-            query=question,
-            response=answer,
-            contexts=[doc.page_content for doc in docs],
-            response_type=content_type,
-            model_version=self.model_version,
-            embedding_version=self.embedding_version
-        )
-        
         # Update memory
         self.memory.save_context({"question": question}, {"answer": answer})
         
@@ -662,8 +645,7 @@ class RAGModel:
         return {
             "answer": answer,
             "source_documents": docs,
-            "content_type": content_type,
-            "evaluation_metrics": evaluation_metrics
+            "content_type": content_type
         }
 
     def load_documents(self) -> int:
@@ -753,7 +735,7 @@ def create_gradio_interface(rag_model: RAGModel) -> gr.Blocks:
     # Create the interface
     with gr.Blocks(theme=gr.themes.Soft()) as interface:
         gr.Markdown("""
-        # G(U)PT: Gothenburg University Information Assistant
+        # GU-PT: Gothenburg University Information Assistant
         Ask questions about Gothenburg University's courses and programs.
         """)
         
