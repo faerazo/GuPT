@@ -47,7 +47,7 @@ class EvaluationSystem:
 
     def load_test_cases(self) -> Dict[str, List[Dict]]:
         """Load test cases from cse_pdf_data.json"""
-        with open("data/json/cse_pdf_data.json", 'r') as f:
+        with open("data/json/cse_merged_data.json", 'r', encoding='utf-8') as f:
             courses_data = json.load(f)
 
         test_cases = {

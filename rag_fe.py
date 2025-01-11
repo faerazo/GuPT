@@ -138,74 +138,6 @@ class RouteQuery(BaseModel):
         description="Route to: 'course' for specific course questions, 'program' for program questions, 'both' when the question involves both or is unclear"
     )
 
-class MetricsTracker:
-    """Tracks and manages system performance metrics."""
-    def __init__(self):
-        self.metrics = {
-            'total_queries': 0,
-            'successful_queries': 0,
-            'failed_queries': 0,
-            'avg_response_time': 0,
-            'response_times': [],
-            'retrieval_stats': {
-                'total_retrievals': 0,
-                'avg_chunks_retrieved': 0,
-                'unique_docs_accessed': set()
-            },
-            'session_start': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            'source_distribution': {}
-        }
-    
-    def update_query_metrics(self, success: bool, response_time: float):
-        """Update metrics after a query."""
-        self.metrics['total_queries'] += 1
-        if success:
-            self.metrics['successful_queries'] += 1
-        else:
-            self.metrics['failed_queries'] += 1
-        
-        self.metrics['response_times'].append(response_time)
-        self.metrics['avg_response_time'] = np.mean(self.metrics['response_times'])
-    
-    def update_retrieval_metrics(self, source_docs: List):
-        """Update metrics after document retrieval."""
-        self.metrics['retrieval_stats']['total_retrievals'] += 1
-        self.metrics['retrieval_stats']['avg_chunks_retrieved'] = (
-            (self.metrics['retrieval_stats']['avg_chunks_retrieved'] * 
-             (self.metrics['retrieval_stats']['total_retrievals'] - 1) + 
-             len(source_docs)) / self.metrics['retrieval_stats']['total_retrievals']
-        )
-        
-        for doc in source_docs:
-            source = os.path.basename(doc.metadata.get('source', ''))
-            if source:
-                self.metrics['retrieval_stats']['unique_docs_accessed'].add(source)
-                self.metrics['source_distribution'][source] = self.metrics['source_distribution'].get(source, 0) + 1
-    
-    def get_metrics_summary(self) -> str:
-        """Generate a human-readable summary of metrics."""
-        success_rate = (self.metrics['successful_queries'] / self.metrics['total_queries'] * 100 
-                       if self.metrics['total_queries'] > 0 else 0)
-        
-        summary = f"""
-### RAG System Performance Metrics
-
-#### Query Statistics
-- Total Queries: {self.metrics['total_queries']}
-- Success Rate: {success_rate:.1f}%
-- Average Response Time: {self.metrics['avg_response_time']:.2f}s
-
-#### Retrieval Statistics
-- Total Documents Retrieved: {self.metrics['retrieval_stats']['total_retrievals']}
-- Average Chunks per Query: {self.metrics['retrieval_stats']['avg_chunks_retrieved']:.1f}
-- Unique Documents Accessed: {len(self.metrics['retrieval_stats']['unique_docs_accessed'])}
-
-#### Session Information
-- Start Time: {self.metrics['session_start']}
-- Current Time: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
-"""
-        return summary
-
 class ChatLogger:
     """Handles logging of chat interactions."""
     def __init__(self, log_file: str = "chat_history.json"):
@@ -439,8 +371,7 @@ class RAGModel:
         
     def _initialize_components(self):
         """Initialize all necessary components."""
-        # Initialize metrics and evaluation
-        self.metrics = MetricsTracker()
+        # Initialize evaluation
         self.evaluation_system = EvaluationSystem()
         
         # Initialize AI models
@@ -604,9 +535,6 @@ class RAGModel:
         print(f"  • Courses: {doc_types.count('course')}")
         print(f"  • Programs: {doc_types.count('program')}")
         
-        # Update metrics
-        self.metrics.update_retrieval_metrics(unique_docs)
-        
         return unique_docs
 
     def query(self, question: str) -> Dict:
@@ -671,8 +599,6 @@ class RAGModel:
             return result
             
         except Exception as e:
-            query_time = time.time() - start_time
-            self.metrics.update_query_metrics(False, query_time)
             return {
                 "answer": f"Error processing query: {str(e)}",
                 "source_documents": [],
@@ -732,7 +658,6 @@ class RAGModel:
         
         # Update metrics
         query_time = time.time() - start_time
-        self.metrics.update_query_metrics(True, query_time)
         
         return {
             "answer": answer,
