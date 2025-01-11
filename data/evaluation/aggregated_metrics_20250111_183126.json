@@ -1,0 +1,81 @@
+{
+  "total_queries": 216,
+  "average_metrics": {
+    "semantic_similarity": 0.6265924411515394,
+    "context_relevance": 0.46879099944123515,
+    "bert_score": 0.8401419467948101,
+    "rouge1_f1": 0.3753653432237023,
+    "rouge2_f1": 0.24750679370364137,
+    "rougeL_f1": 0.3075687010014657
+  },
+  "by_type": {
+    "course_info": {
+      "count": 54,
+      "avg_semantic_similarity": 0.7366919876248749,
+      "avg_context_relevance": 0.45594260317307933,
+      "avg_bert_score": 0.8423283828629388,
+      "avg_rouge1_f1": 0.3179141817528251,
+      "avg_rouge2_f1": 0.18931811094918996,
+      "avg_rougeL_f1": 0.23436689045714273
+    },
+    "prerequisites": {
+      "count": 54,
+      "avg_semantic_similarity": 0.6433081958029006,
+      "avg_context_relevance": 0.5068860451380411,
+      "avg_bert_score": 0.85065515504943,
+      "avg_rouge1_f1": 0.41794617458908856,
+      "avg_rouge2_f1": 0.2904475487195742,
+      "avg_rougeL_f1": 0.35998253040339095
+    },
+    "learning_outcomes": {
+      "count": 54,
+      "avg_semantic_similarity": 0.7306765351030562,
+      "avg_context_relevance": 0.42122240033414626,
+      "avg_bert_score": 0.8564301541558018,
+      "avg_rouge1_f1": 0.5572586738437607,
+      "avg_rouge2_f1": 0.43259755413375656,
+      "avg_rougeL_f1": 0.4830522870630111
+    },
+    "assessment": {
+      "count": 54,
+      "avg_semantic_similarity": 0.3956930460753264,
+      "avg_context_relevance": 0.49111294911967385,
+      "avg_bert_score": 0.8111540951110698,
+      "avg_rouge1_f1": 0.20834234270913488,
+      "avg_rouge2_f1": 0.07766396101204474,
+      "avg_rougeL_f1": 0.1528730960823178
+    }
+  },
+  "confidence_intervals": {
+    "semantic_similarity": {
+      "mean": 0.6265924411515394,
+      "lower_bound": 0.6010202601933289,
+      "upper_bound": 0.65216462210975
+    },
+    "context_relevance": {
+      "mean": 0.46879099944123515,
+      "lower_bound": 0.46165308521731746,
+      "upper_bound": 0.47592891366515283
+    },
+    "bert_score": {
+      "mean": 0.8401419467948101,
+      "lower_bound": 0.8360164633064623,
+      "upper_bound": 0.844267430283158
+    },
+    "rouge1_f1": {
+      "mean": 0.3753653432237023,
+      "lower_bound": 0.34926748238649014,
+      "upper_bound": 0.40146320406091446
+    },
+    "rouge2_f1": {
+      "mean": 0.24750679370364137,
+      "lower_bound": 0.21790893997068408,
+      "upper_bound": 0.27710464743659863
+    },
+    "rougeL_f1": {
+      "mean": 0.3075687010014657,
+      "lower_bound": 0.28010480291847617,
+      "upper_bound": 0.33503259908445526
+    }
+  }
+}

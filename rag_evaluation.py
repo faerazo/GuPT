@@ -169,7 +169,7 @@ class EvaluationSystem:
         all_results = []
 
         for test_type, cases in self.test_cases.items():
-            print(f"Running {test_type} tests...")
+            print(f"\nRunning {test_type} tests...")
             
             if subset_size is not None:
                 cases = cases[:subset_size]
@@ -325,18 +325,7 @@ No evaluation results available yet. Please run the evaluation first using the e
             print(error_msg)
             return error_msg
 
-    def evaluate(self, rag_model) -> None:
-        """Run the evaluation and save results."""
-        print("Running evaluation suite...")
-        metrics = self.run_test_suite(rag_model)
-        self.get_evaluation_summary()
-        print("Evaluation complete. Results saved to data/evaluation/evaluation_summary.md") 
-
 def evaluate(rag_model=None, subset_size: int = None) -> str:
-    """Run evaluation independently and return a summary.
-    
-    If rag_model is not provided, it will create a new instance of RAGModel.
-    """
     try:
         if rag_model is None:
             print("Initializing new RAG model...")
@@ -353,13 +342,8 @@ def evaluate(rag_model=None, subset_size: int = None) -> str:
         print("\nGenerating evaluation summary...")
         summary = evaluator.get_evaluation_summary()
         
-        # Save summary to markdown file
-        summary_file = Path("data/evaluation/evaluation_summary.md")
-        summary_file.parent.mkdir(parents=True, exist_ok=True)
-        summary_file.write_text(summary)
-        
         print(f"\nEvaluation complete! Results saved to:")
-        print(f"- Summary: {summary_file}")
+        print(f"- Summary: {evaluator.summary_file}")
         print(f"- Detailed results: {evaluator.results_file}")
         print(f"- Aggregate metrics: {evaluator.metrics_file}")
         
