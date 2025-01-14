@@ -4,7 +4,7 @@ from typing import List, Dict, Any, Optional
 from datetime import datetime
 from dataclasses import dataclass, asdict
 from rouge_score import rouge_scorer
-from rag_fe import RAGModel
+from rag import RAGModel
 from sentence_transformers import SentenceTransformer
 from bert_score import BERTScorer
 import pandas as pd

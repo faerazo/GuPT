@@ -735,7 +735,7 @@ def create_gradio_interface(rag_model: RAGModel) -> gr.Blocks:
     # Create the interface
     with gr.Blocks(theme=gr.themes.Soft()) as interface:
         gr.Markdown("""
-        # GU-PT: Gothenburg University Information Assistant
+        # GuPT: Gothenburg University Information Assistant
         Ask questions about Gothenburg University's courses and programs.
         """)
         

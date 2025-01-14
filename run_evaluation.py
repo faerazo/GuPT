@@ -1,5 +1,5 @@
 from rag_evaluation import evaluate
-from rag_fe import RAGModel
+from rag import RAGModel
 
 # Initialize your RAG model
 print("Initializing RAG model...")
