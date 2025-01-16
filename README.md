@@ -15,7 +15,6 @@ GuPT’s RAG model is built using **[LangChain](https://github.com/hwchase17/lan
 5. [Evaluation](#evaluation)
 6. [Technologies Used](#technologies-used)
 7. [Video Presentation](#video-presentation)
-8. [Contributors](#contributors)
 
 ---
 
@@ -106,13 +105,3 @@ Where `--subset 3` indicates the subset of the test data you want to evaluate. A
 ## Video Presentation
 
 [![GuPT Video Presentation](https://img.youtube.com/vi/WVeGGnjLzEs/0.jpg)](https://youtu.be/WVeGGnjLzEs)
-
----
-
-## Contributors
-1. Francisco Erazo
-2. Nils Dunlop
-3. Chukwudumebi Ubogu
-4. Yunyi Xu
-
----
