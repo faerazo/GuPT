@@ -1,22 +1,37 @@
+import argparse
 from rag_evaluation import evaluate
 from rag import RAGModel
 
-# Initialize your RAG model
-print("Initializing RAG model...")
-rag_model = RAGModel(".")
-print("Loading documents...")
-rag_model.load_documents()
+def parse_arguments():
+    parser = argparse.ArgumentParser(description='Run RAG model evaluation')
+    parser.add_argument('--subset', 
+                       type=int, 
+                       default=None,
+                       help='Number of test cases to evaluate (default: all)')
+    return parser.parse_args()
 
-# Run evaluation on full dataset
-print("Starting full evaluation...")
-summary = evaluate(rag_model)
+def main():
+    args = parse_arguments()
 
-# Run evaluation on subset
-# print("Starting evaluation on a subset of test cases...")
-# summary = evaluate(rag_model, subset_size=3)
+    # Initialize your RAG model
+    print("Initializing RAG model...")
+    rag_model = RAGModel(".")
+    print("Loading documents...")
+    rag_model.load_documents()
 
-print("\nEvaluation complete!")
-print("Results are saved in data/evaluation/ with timestamp in filenames:")
-print("- eval_[timestamp].md: Human-readable summary")
-print("- evaluation_results_[timestamp].jsonl: Detailed results for each test")
-print("- aggregated_metrics_[timestamp].json: Overall metrics") 
+    # Run evaluation
+    if args.subset:
+        print(f"Starting evaluation on a subset of {args.subset} test cases...")
+        summary = evaluate(rag_model, subset_size=args.subset)
+    else:
+        print("Starting full evaluation...")
+        summary = evaluate(rag_model)
+
+    print("\nEvaluation complete!")
+    print("Results are saved in data/evaluation/ with timestamp in filenames:")
+    print("- eval_[timestamp].md: Human-readable summary")
+    print("- evaluation_results_[timestamp].jsonl: Detailed results for each test")
+    print("- aggregated_metrics_[timestamp].json: Overall metrics")
+
+if __name__ == "__main__":
+    main()

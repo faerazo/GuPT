@@ -797,17 +797,6 @@ def create_gradio_interface(rag_model: RAGModel) -> gr.Blocks:
                 - Department offerings
                 - Combined course/program information
                 """)
-        
-        # Add styled footer with credits
-        gr.Markdown("""
-        <div style="text-align: center; margin-top: 20px; padding: 10px; border-top: 1px solid #ddd;">
-            <p style="margin: 5px 0;">
-                Developed by: 
-                <a href="https://github.com/NilsDunlop" style="text-decoration: none; color: #2A6BB0;">@NilsDunlop</a> & 
-                <a href="https://github.com/faerazo" style="text-decoration: none; color: #2A6BB0;">@faerazo</a>
-            </p>
-        </div>
-        """, show_label=False)
 
     return interface
 
