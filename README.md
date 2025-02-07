@@ -6,6 +6,17 @@ GuPT’s RAG model is built using **[LangChain](https://github.com/hwchase17/lan
 
 ---
 
+
+## 🚀 Try It Out
+
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/NilsDunlop/GuPT)
+
+>  Access our interactive demo and start asking questions about GU courses and programs.
+> 
+> ### 👉 [**Launch GuPT**](https://huggingface.co/spaces/NilsDunlop/GuPT)
+
+---
+
 ## Table of Contents
 
 1. [Features](#features)
