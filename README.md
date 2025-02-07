@@ -12,9 +12,11 @@ GuPT’s RAG model is built using **[LangChain](https://github.com/hwchase17/lan
 2. [Getting Started](#getting-started)
 3. [Installation](#installation)
 4. [Usage](#usage)
-5. [Evaluation](#evaluation)
-6. [Technologies Used](#technologies-used)
-7. [Video Presentation](#video-presentation)
+5. [Data Collection](#data-collection)
+6. [Architecture](#architecture)
+7. [Evaluation](#evaluation)
+8. [Technologies Used](#technologies-used)
+9. [Video Presentation](#video-presentation)
 
 ---
 
@@ -78,6 +80,22 @@ python rag.py
 2. **Ask Your Questions**
 
 Simply type your question or query into the chatbot interface or use one of the provided template questions.
+
+---
+
+## Data Collection
+
+Data from the GU courses and programs is crawled from the [GU website](https://www.gu.se/en/study-gothenburg/study-options/find-courses?hits=25) and stored in the `data` folder. The process is summarized in the following diagram:
+
+![Data Collection](./assets/data_collection.png)
+
+--- 
+
+## Architecture
+
+The architecture of GuPT is shown in the following diagram:
+
+![Architecture](./assets/architecture.png)
 
 ---
 
