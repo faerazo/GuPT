@@ -1,0 +1,80 @@
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env
+pip-log.txt
+pip-delete-this-directory.txt
+.tox
+.coverage
+.coverage.*
+.pytest_cache
+.cache
+htmlcov
+.mypy_cache
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific
+*.log
+.env.local
+.env.*.local
+node_modules/
+*.tmp
+*.temp
+
+# Documentation
+README.md
+docs/
+*.md
+assets/
+
+# Testing
+tests/
+*test*
+coverage/
+
+# Development tools
+.pre-commit-config.yaml
+.flake8
+.isort.cfg
+pyproject.toml
+setup.cfg
+
+
+# Data files that might be large (optional - comment out if you want to include them)
+# data/chroma/
+# data/courses/
+# data/programs/ 

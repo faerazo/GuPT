@@ -1,0 +1,44 @@
+services:
+  gupt:
+    build: .
+    container_name: gupt-app
+    ports:
+      - "7860:7860"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - FIRECRAWL_API_KEY=${FIRECRAWL_API_KEY}
+      - LANGCHAIN_TRACING_V2=${LANGCHAIN_TRACING_V2:-false}
+      - ANONYMIZED_TELEMETRY=${ANONYMIZED_TELEMETRY:-false}
+      - POSTHOG_DISABLED=${POSTHOG_DISABLED:-true}
+      - CHROMA_TELEMETRY_DISABLED=${CHROMA_TELEMETRY_DISABLED:-true}
+      - DO_NOT_TRACK=${DO_NOT_TRACK:-1}
+      - GRADIO_PORT=7860
+      - GRADIO_SHARE=false
+    volumes:
+      # Mount data directory for persistence
+      - ./data:/app/data
+      # Mount .env file
+      - ./.env:/app/.env:ro
+    restart: unless-stopped
+    networks:
+      - gupt-network
+
+  # Optional: Add a simple nginx proxy for production
+  # nginx:
+  #   image: nginx:alpine
+  #   ports:
+  #     - "80:80"
+  #   volumes:
+  #     - ./nginx.conf:/etc/nginx/nginx.conf
+  #   depends_on:
+  #     - gupt
+  #   networks:
+  #     - gupt-network
+
+networks:
+  gupt-network:
+    driver: bridge
+
+volumes:
+  gupt-data:
+    driver: local 
