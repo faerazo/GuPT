@@ -17,8 +17,6 @@ services:
     volumes:
       # Mount data directory for persistence
       - ./data:/app/data
-      # Mount .env file
-      - ./.env:/app/.env:ro
     restart: unless-stopped
     networks:
       - gupt-network

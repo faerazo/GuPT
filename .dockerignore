@@ -49,6 +49,9 @@ Thumbs.db
 
 # Project specific
 *.log
+.env
+chat_history.json
+.env.local
 .env.local
 .env.*.local
 node_modules/
@@ -74,7 +77,5 @@ pyproject.toml
 setup.cfg
 
 
-# Data files that might be large (optional - comment out if you want to include them)
-# data/chroma/
-# data/courses/
-# data/programs/ 
+# Data files that might be large (keep out of build context; mounted at runtime)
+data/
