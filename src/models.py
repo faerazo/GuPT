@@ -58,7 +58,7 @@ class EmbeddingConfig(BaseModel):
 
 class ModelConfig(BaseModel):
     """Configuration for LLM models."""
-    model_name: str = "gpt-4o-mini"
+    model_name: str = "gpt-5-mini-2025-08-07"
     temperature: float = 0.1
     max_tokens: Optional[int] = None
 

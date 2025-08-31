@@ -2,12 +2,12 @@
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://python.org)
 [![LangChain](https://img.shields.io/badge/LangChain-0.3+-green.svg)](https://langchain.com)
-[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4.1--mini--2025--04--14-orange.svg)](https://openai.com)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--5--mini-orange.svg)](https://openai.com)
 [![Gradio](https://img.shields.io/badge/Gradio-5.22+-red.svg)](https://gradio.app)
 
 GuPT is the name of the project developed by a student group for the course **Machine Learning for Natural Language Processing (DIT247)**. The system leverages extracted information from Gothenburg University's (GU) bachelor's and master's courses (~590) and programs (~90), including relevant details from their websites and syllabus PDFs. This data is used as input to **GuPT**, which then employs a **Retrieval-Augmented Generation (RAG)** approach to respond to user queries. 
 
-GuPT's RAG model is built using **[LangChain](https://github.com/hwchase17/langchain)**, **OpenAI** embeddings, and **ChatGPT4o-mini**. By utilizing multi-querying and logic routing, GuPT can handle ambiguous questions and provide both specific and general answers regarding GU courses and programs. The goal is to offer a tool that efficiently provides information on entry requirements, learning objectives, and assessment methods, thereby reducing confusion and administrative workload.
+GuPT's RAG model is built using **[LangChain](https://github.com/hwchase17/langchain)**, **OpenAI** embeddings, and **gpt-5-mini**. By utilizing multi-querying and logic routing, GuPT can handle ambiguous questions and provide both specific and general answers regarding GU courses and programs. The goal is to offer a tool that efficiently provides information on entry requirements, learning objectives, and assessment methods, thereby reducing confusion and administrative workload.
 
 ---
 

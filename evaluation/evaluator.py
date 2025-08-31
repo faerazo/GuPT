@@ -96,7 +96,7 @@ class EvaluationSystem:
                     ground_truth=case.ground_truth,
                     contexts=[doc.page_content for doc in response.source_documents],
                     response_type=test_type,
-                    model_version="gpt-4o-mini",
+                    model_version="gpt-5-mini-2025-08-07",
                     embedding_version="text-embedding-3-small"
                 )
                 

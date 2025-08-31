@@ -13,7 +13,7 @@ class Config:
     FIRECRAWL_API_KEY = os.getenv("FIRECRAWL_API_KEY")
     
     # Model Configuration
-    MODEL_NAME = os.getenv("MODEL_NAME", "gpt-4.1-mini-2025-04-14")
+    MODEL_NAME = os.getenv("MODEL_NAME", "gpt-5-mini-2025-08-07")
     EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "text-embedding-3-small")
     TEMPERATURE = float(os.getenv("TEMPERATURE", "0.1"))
     MAX_TOKENS = int(os.getenv("MAX_TOKENS", "2000"))
